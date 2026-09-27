@@ -269,3 +269,14 @@ footer.site .foot-links {
   margin-bottom: 12px;
   flex-wrap: wrap;
 }
+
+/* Legal pages (privacy policy) */
+.legal { padding: 40px 0 64px; }
+.legal .wrap { max-width: 760px; }
+.legal h1 { font-size: 30px; margin: 0 0 6px; }
+.legal .updated { color: var(--text-3); font-size: 13px; margin: 0 0 28px; }
+.legal h2 { font-size: 18px; margin: 32px 0 10px; text-align: left; }
+.legal p, .legal li { color: var(--text-2); font-size: 15px; line-height: 1.7; }
+.legal strong { color: var(--text); }
+.legal ul { padding-left: 20px; }
+.legal a { color: var(--red-light); }
