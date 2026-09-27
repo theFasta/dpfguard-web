@@ -232,6 +232,21 @@ section p.lead {
 .compat h3 { margin: 0 0 10px; font-size: 15px; font-weight: 700; }
 .compat p { margin: 0; color: var(--text-2); font-size: 14px; line-height: 1.6; }
 .compat strong { color: var(--text); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.compat a.mail {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--red-light);
+  font-weight: 600;
+  font-size: 14.5px;
+  text-decoration: none;
+  word-break: break-all;
+}
+.compat a.mail:hover { text-decoration: underline; }
 
 .cta {
   text-align: center;
