@@ -3,91 +3,166 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DPF Guard</title>
-<style>
-  :root { color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    background: #0d0d0d;
-    color: #e8e8e8;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  .card {
-    max-width: 480px;
-    width: 100%;
-    text-align: center;
-  }
-  .icon {
-    width: 72px;
-    height: 72px;
-    margin: 0 auto 20px;
-    border-radius: 16px;
-    background: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 34px;
-  }
-  h1 {
-    margin: 0 0 8px;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-  p.tagline {
-    margin: 0 0 32px;
-    color: #a0a0a0;
-    font-size: 15px;
-    line-height: 1.5;
-  }
-  .links { display: flex; flex-direction: column; gap: 10px; }
-  a.btn {
-    display: block;
-    padding: 14px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    background: #1a1a1a;
-    color: #e8e8e8;
-    border: 1px solid #2a2a2a;
-  }
-  a.btn.primary {
-    background: #cc0000;
-    border-color: #cc0000;
-    color: #fff;
-  }
-  footer {
-    margin-top: 32px;
-    font-size: 12px;
-    color: #666;
-  }
-  footer a { color: #888; }
-</style>
+<title>DPF Guard — Monitoraggio FAP in tempo reale</title>
+<meta name="description" content="DPF Guard monitora il filtro antiparticolato del tuo motore diesel via OBD2: stato di rigenerazione, fuliggine, temperatura e altro, in tempo reale.">
+<meta property="og:title" content="DPF Guard">
+<meta property="og:description" content="Monitora il filtro antiparticolato e la rigenerazione, in tempo reale.">
+<meta property="og:image" content="/assets/feature_graphic_it.png">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="alternate" hreflang="it" href="https://dpfguard.it/">
+<link rel="alternate" hreflang="en" href="https://dpfguard.it/en/">
+<link rel="alternate" hreflang="fr" href="https://dpfguard.it/fr/">
+<link rel="alternate" hreflang="de" href="https://dpfguard.it/de/">
+<link rel="alternate" hreflang="x-default" href="https://dpfguard.it/">
 </head>
 <body>
-  <div class="card">
-    <div class="icon">🛡️</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+    <nav class="lang-switch">
+      <a href="/" class="active">IT</a>
+      <a href="/en/">EN</a>
+      <a href="/fr/">FR</a>
+      <a href="/de/">DE</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <img class="icon" src="/assets/icon.png" alt="DPF Guard">
     <h1>DPF Guard</h1>
-    <p class="tagline">
-      Monitoraggio del filtro antiparticolato (FAP/DPF) via OBD2,
-      pensato per chi guida prevalentemente in città.
+    <div class="accent-rule"></div>
+    <p class="sub">
+      Monitora il filtro antiparticolato (FAP/DPF) e la rigenerazione del
+      tuo motore diesel, in tempo reale, direttamente dal telefono.
     </p>
-    <div class="links">
+    <div class="btn-row">
       <a class="btn primary" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
         Scarica su Google Play
       </a>
-      <a class="btn" href="https://thefasta.github.io/public_pages/dpf_guard/dpf_guard_privacy.html">
-        Privacy Policy
-      </a>
+      <a class="btn ghost" href="#parametri">Scopri i parametri</a>
     </div>
-    <footer>© 2026 DPF Guard</footer>
   </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Perché DPF Guard</h2>
+    <p class="lead">
+      Il filtro antiparticolato fatica a rigenerarsi con percorsi brevi e
+      guida prevalentemente urbana — proprio le condizioni più comuni in
+      città. DPF Guard ti mostra cosa sta succedendo al FAP mentre guidi,
+      così sai quando serve semplicemente allungare il giro, senza dover
+      portare l'auto in officina solo per saperlo.
+    </p>
+  </div>
+</section>
+
+<section id="parametri">
+  <div class="wrap">
+    <h2>Parametri monitorati</h2>
+    <p class="lead">
+      Letti direttamente dalla centralina del motore via OBD2, aggiornati
+      in tempo reale mentre guidi.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Stato rigenerazione</h3>
+        <p>Sai subito se il FAP è in condizioni normali, in attesa o in fase di rigenerazione attiva.</p>
+      </div>
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Massa fuliggine</h3>
+        <p>Quanta fuliggine si è accumulata nel filtro, con l'andamento nel tempo.</p>
+      </div>
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Temperatura FAP</h3>
+        <p>La temperatura del filtro durante la marcia e durante la rigenerazione.</p>
+      </div>
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Pressione differenziale</h3>
+        <p>Un indicatore chiave di quanto il filtro sia intasato.</p>
+      </div>
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Tentativi di rigenerazione falliti</h3>
+        <p>Individua per tempo un ciclo di rigenerazione che non è andato a buon fine.</p>
+      </div>
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Km dall'ultima rigenerazione</h3>
+        <p>Quanta strada hai percorso dall'ultima rigenerazione riuscita.</p>
+      </div>
+      <div class="card">
+        <div class="dot"></div>
+        <h3>Parametri motore</h3>
+        <p>Temperatura acqua, tensione centralina e altri dati utili raccolti dalla centralina.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Come funziona</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Collega il dongle</h3>
+        <p>Abbina via Bluetooth un dongle OBD2 compatibile alla porta diagnostica dell'auto.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Apri l'app</h3>
+        <p>DPF Guard legge i dati direttamente dalla centralina del motore, senza attrezzatura da officina.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Guida informato</h3>
+        <p>Ricevi un avviso quando il FAP entra in rigenerazione, anche con l'app in background.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="compat">
+      <p>
+        Pensata per motori diesel con FAP. Attualmente confermata su motori
+        <strong>Renault/Dacia 1.5 dCi (K9K)</strong>; il supporto ad altri
+        motori diesel è in sviluppo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <p>Prova gratuita disponibile, poi sblocco con un unico acquisto.</p>
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
+      Scarica su Google Play
+    </a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://thefasta.github.io/public_pages/dpf_guard/dpf_guard_privacy.html">Privacy Policy</a>
+    </div>
+    © 2026 DPF Guard
+  </div>
+</footer>
+
 </body>
 </html>
