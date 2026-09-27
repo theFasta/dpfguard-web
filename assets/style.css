@@ -103,6 +103,9 @@ header.site .wrap {
   line-height: 1.6;
 }
 
+.play-badge { display: inline-block; line-height: 0; }
+.play-badge img { height: 54px; width: auto; }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -144,6 +147,25 @@ section p.lead {
 }
 
 /* Parameter grid, styled like the app's own dashboard cards */
+.screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.screen { text-align: center; }
+.screen img {
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  margin-bottom: 12px;
+}
+.screen p {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 13.5px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -196,12 +218,18 @@ section p.lead {
 .step h3 { margin: 0 0 8px; font-size: 14.5px; font-weight: 700; }
 .step p { margin: 0; color: var(--text-2); font-size: 13.5px; line-height: 1.5; }
 
+.compat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
 .compat {
   background: var(--surface);
   border-radius: 16px;
   padding: 28px;
   text-align: center;
 }
+.compat h3 { margin: 0 0 10px; font-size: 15px; font-weight: 700; }
 .compat p { margin: 0; color: var(--text-2); font-size: 14px; line-height: 1.6; }
 .compat strong { color: var(--text); }
 
