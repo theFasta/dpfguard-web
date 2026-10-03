@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DPF Guard — Surveillance du FAP en temps réel</title>
-<meta name="description" content="DPF Guard surveille le filtre à particules de votre moteur diesel via OBD2 : état de régénération, masse de suie, température et plus, en temps réel.">
+<meta name="description" content="DPF Guard surveille le filtre à particules de votre moteur diesel via OBD2 : état de régénération, masse de suie, température et plus, en temps réel. Pour moteurs Renault/Dacia/Nissan 1.5 dCi (K9K).">
 <meta property="og:title" content="DPF Guard">
 <meta property="og:description" content="Surveillez votre filtre à particules et sa régénération, en temps réel.">
 <meta property="og:image" content="/assets/feature_graphic_en.png">
@@ -43,6 +43,7 @@
       votre moteur diesel, en temps réel, directement depuis votre
       téléphone.
     </p>
+    <p class="notice"><strong>Prise en charge actuelle : moteurs Renault / Dacia / Nissan 1.5 dCi (K9K) uniquement</strong><span>Dacia Duster, Sandero, Logan · Renault Clio, Mégane, Kangoo · Nissan Micra, Note — versions diesel équipées d'un FAP</span><span>Utilisez l'essai gratuit pour vérifier la compatibilité de votre véhicule avant l'achat.</span></p>
     <div class="btn-row">
       <a class="play-badge" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
         <img src="/assets/google-play-badge-fr.png" alt="Télécharger sur Google Play">
@@ -92,12 +93,12 @@
       <div class="card">
         <div class="dot"></div>
         <h3>État de régénération</h3>
-        <p>Sachez immédiatement si le FAP est en état normal, en attente, ou en régénération active.</p>
+        <p>Sachez immédiatement si le FAP est en régénération : active, quand le calculateur nettoie le filtre, ou passive, FAP chaud et suies en baisse.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
         <h3>Masse de suie</h3>
-        <p>La quantité de suie accumulée dans le filtre, avec son évolution dans le temps.</p>
+        <p>La quantité de suie accumulée dans le filtre, avec barre de progression et seuils d'alerte.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
@@ -111,18 +112,18 @@
       </div>
       <div class="card">
         <div class="dot"></div>
-        <h3>Tentatives de régénération échouées</h3>
-        <p>Repérez à temps un cycle de régénération qui n'a pas abouti.</p>
+        <h3>Résultat des régénérations</h3>
+        <p>Les suies restantes après la dernière régénération et les tentatives échouées, pour repérer à temps un cycle qui n'a pas abouti.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
         <h3>Km depuis la dernière régénération</h3>
-        <p>La distance parcourue depuis la dernière régénération réussie.</p>
+        <p>Calculés par l'app à partir du compteur kilométrique, dès la première régénération détectée avec l'app connectée.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
-        <h3>Paramètres moteur</h3>
-        <p>Température d'eau, tension du calculateur et autres données utiles du moteur.</p>
+        <h3>Kilométrage et plus</h3>
+        <p>Kilométrage total, vitesse, température du liquide de refroidissement et tension batterie, sur une ligne de cartes compactes.</p>
       </div>
     </div>
   </div>
@@ -167,10 +168,11 @@
       <div class="compat">
         <h3>Moteurs compatibles</h3>
         <p>
-          Conçue pour les moteurs diesel équipés d'un FAP. Actuellement
-          confirmée sur les moteurs
-          <strong>Renault/Dacia 1.5 dCi (K9K)</strong> ; la prise en charge
-          d'autres moteurs diesel est en cours de développement.
+          Prend actuellement en charge uniquement les moteurs
+          <strong>Renault / Dacia / Nissan 1.5 dCi (K9K)</strong> équipés
+          d'un FAP, confirmé sur Dacia Duster. Véhicule à bus CAN requis ;
+          la prise en charge d'autres moteurs diesel est en cours de
+          développement.
         </p>
       </div>
     </div>
@@ -202,7 +204,7 @@
 
 <section class="cta">
   <div class="wrap">
-    <p>Essai gratuit disponible, puis déblocage avec un achat unique.</p>
+    <p>Essai gratuit de 3 minutes par session, puis un achat unique. Sans abonnement, sans publicité, sans compte.</p>
     <a class="play-badge" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
       <img src="/assets/google-play-badge-fr.png" alt="Télécharger sur Google Play">
     </a>

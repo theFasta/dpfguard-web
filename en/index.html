@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DPF Guard — Real-time DPF monitoring</title>
-<meta name="description" content="DPF Guard monitors your diesel engine's particulate filter over OBD2: regeneration status, soot mass, temperature and more, in real time.">
+<meta name="description" content="DPF Guard monitors your diesel engine's particulate filter over OBD2: regeneration status, soot mass, temperature and more, in real time. For Renault/Dacia/Nissan 1.5 dCi (K9K) engines.">
 <meta property="og:title" content="DPF Guard">
 <meta property="og:description" content="Monitor your diesel particulate filter and regeneration, in real time.">
 <meta property="og:image" content="/assets/feature_graphic_en.png">
@@ -42,6 +42,7 @@
       Monitor your diesel engine's particulate filter (DPF/FAP) and its
       regeneration, in real time, right from your phone.
     </p>
+    <p class="notice"><strong>Currently supports Renault / Dacia / Nissan 1.5 dCi (K9K) engines only</strong><span>Dacia Duster, Sandero, Logan · Renault Clio, Mégane, Kangoo · Nissan Micra, Note — diesel versions with a particulate filter</span><span>Use the free trial to check that your car is compatible before buying.</span></p>
     <div class="btn-row">
       <a class="play-badge" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
         <img src="/assets/google-play-badge-en.png" alt="Get it on Google Play">
@@ -90,12 +91,12 @@
       <div class="card">
         <div class="dot"></div>
         <h3>Regeneration status</h3>
-        <p>Instantly see whether the DPF is in normal condition, waiting, or actively regenerating.</p>
+        <p>Instantly see whether the DPF is regenerating: active, when the ECU is cleaning the filter, or passive, with a hot DPF and falling soot.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
         <h3>Soot mass</h3>
-        <p>How much soot has built up in the filter, with the trend over time.</p>
+        <p>How much soot has built up in the filter, with a progress bar and warning thresholds.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
@@ -109,18 +110,18 @@
       </div>
       <div class="card">
         <div class="dot"></div>
-        <h3>Failed regeneration attempts</h3>
-        <p>Catch a regeneration cycle that didn't complete, early.</p>
+        <h3>Regeneration outcome</h3>
+        <p>Soot left after the last regeneration and failed attempts, so you catch a cycle that didn't complete early.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
         <h3>Distance since last regeneration</h3>
-        <p>How far you've driven since the last successful regeneration.</p>
+        <p>Counted by the app from the vehicle odometer, starting from the first regeneration detected with the app connected.</p>
       </div>
       <div class="card">
         <div class="dot"></div>
-        <h3>Engine parameters</h3>
-        <p>Coolant temperature, battery voltage and other useful data from the ECU.</p>
+        <h3>Total km and more</h3>
+        <p>Total vehicle mileage, speed, coolant temperature and battery voltage, in a row of compact cards.</p>
       </div>
     </div>
   </div>
@@ -165,9 +166,11 @@
       <div class="compat">
         <h3>Compatible engines</h3>
         <p>
-          Built for diesel engines with a particulate filter. Currently
-          confirmed on <strong>Renault/Dacia 1.5 dCi (K9K)</strong> engines;
-          support for other diesel engines is in development.
+          Currently supports
+          <strong>Renault / Dacia / Nissan 1.5 dCi (K9K)</strong> engines
+          with a particulate filter only, confirmed on Dacia Duster. Requires
+          a CAN bus vehicle; support for other diesel engines is in
+          development.
         </p>
       </div>
     </div>
@@ -199,7 +202,7 @@
 
 <section class="cta">
   <div class="wrap">
-    <p>Free trial available, then unlock with a single purchase.</p>
+    <p>Free 3-minute trial per session, then a one-time purchase. No subscriptions, no ads, no account.</p>
     <a class="play-badge" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
       <img src="/assets/google-play-badge-en.png" alt="Get it on Google Play">
     </a>
