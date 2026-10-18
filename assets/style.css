@@ -168,13 +168,15 @@ section p.lead {
 /* Parameter grid, styled like the app's own dashboard cards */
 .screens {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
-  max-width: 640px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .screen { text-align: center; }
 .screen img {
+  width: 100%;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   margin-bottom: 12px;
