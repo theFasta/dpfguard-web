@@ -23,7 +23,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 25 October 2026</p>
+    <p class="updated">Last updated: 25 October 2026 (version 1.2.1)</p>
 
     <p>
       DPF Guard ("the App") is an Android application that reads live OBD2
@@ -100,7 +100,8 @@
         declared as not used to derive location.
       </li>
       <li>
-        <strong>BLUETOOTH / BLUETOOTH_ADMIN / ACCESS_FINE_LOCATION</strong>
+        <strong>BLUETOOTH / BLUETOOTH_ADMIN / ACCESS_FINE_LOCATION /
+        ACCESS_COARSE_LOCATION</strong>
         (Android 11 and below only) — required by the operating system for
         Bluetooth scanning; no location data is accessed or stored.
       </li>
@@ -112,11 +113,6 @@
       <li>
         <strong>RECEIVE_BOOT_COMPLETED</strong> — to schedule the Planner
         reminders again after the phone restarts.
-      </li>
-      <li>
-        <strong>ACCESS_COARSE_LOCATION</strong> — declared by a Bluetooth
-        library the App uses; the App never asks for it and never reads
-        your location.
       </li>
       <li>
         <strong>BILLING</strong> — to offer the in-app purchase through
