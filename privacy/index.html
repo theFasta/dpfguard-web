@@ -23,13 +23,15 @@
 <main class="legal">
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 27 September 2026</p>
+    <p class="updated">Last updated: 25 October 2026</p>
 
     <p>
       DPF Guard ("the App") is an Android application that reads live OBD2
       data from a vehicle's engine control unit through a Bluetooth OBD2
       adapter (Bluetooth Low Energy or Bluetooth Classic) and displays
-      Diesel Particulate Filter (DPF/FAP) diagnostics on screen.
+      Diesel Particulate Filter (DPF/FAP) diagnostics on screen. It also
+      includes a maintenance Planner that reminds you of your car's
+      deadlines (service, insurance, road tax and so on).
     </p>
 
     <h2>1. Data we collect</h2>
@@ -46,10 +48,24 @@
       <li>
         <strong>Vehicle readings</strong> — live values (soot mass,
         temperatures, pressures, speed, etc.) are displayed on screen and
-        are not logged or transmitted. The only reading the App keeps is
-        the vehicle's odometer value at the end of the last detected
-        regeneration, stored locally on the device to compute the distance
-        driven since then.
+        are not logged or transmitted. The App keeps only the vehicle's
+        odometer value at the end of the last detected regeneration, to
+        compute the distance driven since then, and the odometer values used
+        by the Planner (see below), all stored locally on the device.
+      </li>
+      <li>
+        <strong>Planner data</strong> — the cars you add (the name you give
+        them and the engine type), your reminders, the jobs you mark as done
+        with their date, mileage and optional note, and the odometer values
+        read from the car or typed in by you, used to estimate when a
+        mileage-based reminder is due. Stored locally on the device.
+      </li>
+      <li>
+        <strong>Vehicle fingerprint</strong> — to recognise which of your
+        cars the adapter is plugged into, the App reads the vehicle
+        identification number (VIN) and stores only a one-way fingerprint of
+        it (a SHA-256 hash), never the VIN itself. The fingerprint cannot be
+        turned back into the VIN.
       </li>
       <li>
         <strong>App preferences</strong> — the selected engine profile, the
@@ -89,8 +105,18 @@
         Bluetooth scanning; no location data is accessed or stored.
       </li>
       <li>
-        <strong>POST_NOTIFICATIONS</strong> (Android 13+) — to show the
-        background monitoring notification and the regeneration alert.
+        <strong>POST_NOTIFICATIONS</strong> (Android 13+) and
+        <strong>VIBRATE</strong> — to show the background monitoring
+        notification, the regeneration alert and the Planner reminders.
+      </li>
+      <li>
+        <strong>RECEIVE_BOOT_COMPLETED</strong> — to schedule the Planner
+        reminders again after the phone restarts.
+      </li>
+      <li>
+        <strong>ACCESS_COARSE_LOCATION</strong> — declared by a Bluetooth
+        library the App uses; the App never asks for it and never reads
+        your location.
       </li>
       <li>
         <strong>BILLING</strong> — to offer the in-app purchase through
@@ -111,9 +137,13 @@
 
     <h2>5. Data retention and deletion</h2>
     <p>
-      Everything the App stores stays on your device. You can delete it at
-      any time by uninstalling the App or by clearing its data in Android
-      Settings → Apps → DPF Guard → Storage → Clear data.
+      Everything the App stores stays on your device. If Android backup is
+      turned on for your Google account, Android may include the App's data
+      (including the Planner) in your device backup, so it can be restored
+      on a new phone; that backup is handled by Google under its own
+      privacy policy and we have no access to it. You can delete the App's
+      data at any time by uninstalling the App or by clearing its data in
+      Android Settings → Apps → DPF Guard → Storage → Clear data.
     </p>
 
     <h2>6. Children's privacy</h2>
