@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Politica de confidențialitate</title>
+<meta name="description" content="Politica de confidențialitate a aplicației Android DPF Guard.">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="canonical" href="https://dpfguard.it/ro/privacy/">
+<link rel="alternate" hreflang="en" href="https://dpfguard.it/privacy/">
+<link rel="alternate" hreflang="es" href="https://dpfguard.it/es/privacy/">
+<link rel="alternate" hreflang="ro" href="https://dpfguard.it/ro/privacy/">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/ro/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Politica de confidențialitate</h1>
+    <p class="updated">Ultima actualizare: 25 octombrie 2026 (versiunea 1.2.1)</p>
+
+    <p>
+      DPF Guard („Aplicația”) este o aplicație Android care citește date
+      OBD2 în timp real din calculatorul motorului unei mașini, printr-un
+      adaptor OBD2 Bluetooth (Bluetooth Low Energy sau Bluetooth Classic),
+      și afișează pe ecran diagnoza filtrului de particule (DPF/FAP).
+      Include și o Agendă de revizii care îți amintește termenele mașinii
+      tale (revizie, RCA, rovinietă etc.).
+    </p>
+
+    <h2>1. Datele pe care le colectăm</h2>
+    <p>
+      Aplicația nu colectează date personale. Nimic din ce citește sau
+      salvează nu este trimis vreodată către noi sau către vreun server al
+      nostru. Concret:
+    </p>
+    <ul>
+      <li>
+        <strong>Rezultatele căutării Bluetooth</strong>: numele și
+        intensitatea semnalului adaptoarelor sunt afișate în timpul căutării
+        și nu sunt niciodată salvate sau transmise în afara dispozitivului.
+      </li>
+      <li>
+        <strong>Citirile din mașină</strong>: valorile în timp real (masa de
+        funingine, temperaturi, presiuni, viteză etc.) sunt afișate pe ecran
+        și nu sunt înregistrate sau transmise. Aplicația păstrează doar
+        kilometrajul mașinii de la sfârșitul ultimei regenerări detectate,
+        pentru a calcula distanța parcursă de atunci, și kilometrajele
+        folosite de Agendă (vezi mai jos), toate salvate local pe
+        dispozitiv.
+      </li>
+      <li>
+        <strong>Datele Agendei</strong>: mașinile pe care le adaugi
+        (numele pe care li-l dai și tipul de motor), termenele tale,
+        lucrările pe care le marchezi ca făcute, cu data, kilometrajul și o
+        notă opțională, precum și kilometrajele citite din mașină sau
+        introduse de tine, folosite pentru a estima când expiră un termen la
+        km. Salvate local pe dispozitiv.
+      </li>
+      <li>
+        <strong>Amprenta mașinii</strong>: pentru a recunoaște în care
+        dintre mașinile tale este conectat adaptorul, Aplicația citește
+        seria de șasiu (VIN) și păstrează doar o amprentă ireversibilă a
+        acesteia (un hash SHA-256), niciodată VIN-ul. Din amprentă nu se
+        poate reconstitui VIN-ul.
+      </li>
+      <li>
+        <strong>Preferințele Aplicației</strong>: profilul de motor ales,
+        ordinea cardurilor de pe ecranul principal și sursa de date aleasă
+        pentru unii parametri sunt salvate local pe dispozitiv.
+      </li>
+      <li>
+        <strong>Starea achiziției</strong>: dacă deblochezi versiunea
+        completă printr-o achiziție în aplicație, starea deblocării este
+        salvată local pe dispozitiv. Plățile sunt gestionate în întregime de
+        Google Play; nu primim și nu păstrăm niciodată date de plată.
+      </li>
+    </ul>
+
+    <h2>2. Datele pe care nu le colectăm</h2>
+    <ul>
+      <li>Niciun cont de utilizator și nicio înregistrare</li>
+      <li>Niciun serviciu de statistici sau de raportare a erorilor</li>
+      <li>Niciun SDK de publicitate</li>
+      <li>
+        Nicio dată de localizare (pe Android 11 și versiunile anterioare,
+        sistemul de operare cere permisiunea de localizare pentru căutarea
+        dispozitivelor Bluetooth, dar Aplicația nu citește și nu folosește
+        niciodată locația ta)
+      </li>
+    </ul>
+
+    <h2>3. Permisiuni</h2>
+    <ul>
+      <li>
+        <strong>BLUETOOTH_SCAN / BLUETOOTH_CONNECT</strong> (Android 12+):
+        pentru a găsi adaptorul OBD2 și a te conecta la el. Permisiunea de
+        căutare este declarată ca nefolosită pentru deducerea locației.
+      </li>
+      <li>
+        <strong>BLUETOOTH / BLUETOOTH_ADMIN / ACCESS_FINE_LOCATION /
+        ACCESS_COARSE_LOCATION</strong>
+        (doar Android 11 și versiunile anterioare): cerute de sistemul de
+        operare pentru căutarea Bluetooth; nicio dată de localizare nu este
+        accesată sau salvată.
+      </li>
+      <li>
+        <strong>POST_NOTIFICATIONS</strong> (Android 13+) și
+        <strong>VIBRATE</strong>: pentru notificarea de monitorizare în
+        fundal, alerta de regenerare și mementourile Agendei.
+      </li>
+      <li>
+        <strong>RECEIVE_BOOT_COMPLETED</strong>: pentru a reprograma
+        mementourile Agendei după repornirea telefonului.
+      </li>
+      <li>
+        <strong>BILLING</strong>: pentru a oferi achiziția în aplicație prin
+        Google Play.
+      </li>
+    </ul>
+
+    <h2>4. Servicii terțe</h2>
+    <p>
+      Aplicația folosește serviciile <strong>Google Play</strong> pentru
+      achizițiile în aplicație și pentru a verifica dacă există o versiune
+      mai nouă (Google Play In-App Updates). Acestea sunt furnizate de
+      Google conform propriei politici de confidențialitate:
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+      Aplicația nu integrează niciun alt SDK terț care colectează date.
+    </p>
+
+    <h2>5. Păstrarea și ștergerea datelor</h2>
+    <p>
+      Tot ce salvează Aplicația rămâne pe dispozitivul tău. Dacă backupul
+      Android este activat pentru contul tău Google, Android poate include
+      datele Aplicației (inclusiv Agenda) în backupul dispozitivului, pentru
+      a le restaura pe un telefon nou; acest backup este gestionat de Google
+      conform propriei politici de confidențialitate, iar noi nu avem acces
+      la el. Poți șterge oricând datele Aplicației dezinstalând-o sau
+      ștergându-i datele din Setări Android → Aplicații → DPF Guard →
+      Stocare → Șterge datele.
+    </p>
+
+    <h2>6. Confidențialitatea copiilor</h2>
+    <p>
+      Aplicația nu se adresează copiilor sub 13 ani și nu colectează în mod
+      intenționat informații de la copii.
+    </p>
+
+    <h2>7. Modificări ale acestei politici</h2>
+    <p>
+      Dacă facem modificări importante acestei politici, vom actualiza data
+      „Ultima actualizare” din partea de sus a acestei pagini.
+    </p>
+
+    <h2>8. Contact</h2>
+    <p>
+      Pentru orice întrebare despre această politică de confidențialitate,
+      scrie la <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="/ro/">Acasă</a>
+      <a href="/ro/#contact">Contact</a>
+      <a href="/privacy/">English</a>
+    </div>
+    © 2026 DPF Guard
+  </div>
+</footer>
+
+</body>
+</html>

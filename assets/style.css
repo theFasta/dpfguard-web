@@ -70,6 +70,12 @@ header.site .wrap {
   color: var(--text);
   background: var(--surface);
 }
+/* Six languages don't fit next to the brand on a phone: wrap below it. */
+@media (max-width: 520px) {
+  header.site .wrap { flex-wrap: wrap; row-gap: 10px; }
+  .lang-switch { gap: 2px; }
+  .lang-switch a { padding: 6px 8px; }
+}
 
 /* Hero */
 .hero {

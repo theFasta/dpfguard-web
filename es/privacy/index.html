@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Política de privacidad</title>
+<meta name="description" content="Política de privacidad de la app para Android DPF Guard.">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="canonical" href="https://dpfguard.it/es/privacy/">
+<link rel="alternate" hreflang="en" href="https://dpfguard.it/privacy/">
+<link rel="alternate" hreflang="es" href="https://dpfguard.it/es/privacy/">
+<link rel="alternate" hreflang="ro" href="https://dpfguard.it/ro/privacy/">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/es/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 25 de octubre de 2026 (versión 1.2.1)</p>
+
+    <p>
+      DPF Guard («la App») es una aplicación para Android que lee datos OBD2
+      en directo de la centralita del motor de un vehículo mediante un
+      adaptador OBD2 Bluetooth (Bluetooth Low Energy o Bluetooth Classic) y
+      muestra en pantalla el diagnóstico del filtro de partículas (FAP/DPF).
+      Incluye también una Agenda de mantenimiento que te recuerda los
+      vencimientos de tu coche (revisión, seguro, impuesto, etc.).
+    </p>
+
+    <h2>1. Datos que recogemos</h2>
+    <p>
+      La App no recoge datos personales. Nada de lo que lee o guarda se
+      envía nunca a nosotros ni a ningún servidor nuestro. En concreto:
+    </p>
+    <ul>
+      <li>
+        <strong>Resultados de la búsqueda Bluetooth</strong>: los nombres y
+        la intensidad de señal de los adaptadores se muestran durante la
+        búsqueda y nunca se guardan ni se transmiten fuera del dispositivo.
+      </li>
+      <li>
+        <strong>Lecturas del vehículo</strong>: los valores en directo
+        (masa de hollín, temperaturas, presiones, velocidad, etc.) se
+        muestran en pantalla y no se registran ni se transmiten. La App
+        guarda solo el kilometraje del vehículo al final de la última
+        regeneración detectada, para calcular la distancia recorrida desde
+        entonces, y los kilometrajes que usa la Agenda (ver abajo), todo
+        guardado localmente en el dispositivo.
+      </li>
+      <li>
+        <strong>Datos de la Agenda</strong>: los coches que añades (el
+        nombre que les das y el tipo de motor), tus vencimientos, los
+        trabajos que marcas como hechos con su fecha, kilometraje y nota
+        opcional, y los kilometrajes leídos del coche o introducidos por ti,
+        usados para estimar cuándo vence un recordatorio por km. Guardados
+        localmente en el dispositivo.
+      </li>
+      <li>
+        <strong>Huella del vehículo</strong>: para reconocer en cuál de tus
+        coches está enchufado el adaptador, la App lee el número de
+        bastidor (VIN) y guarda solo una huella irreversible del mismo (un
+        hash SHA-256), nunca el VIN. La huella no permite reconstruir el
+        VIN.
+      </li>
+      <li>
+        <strong>Preferencias de la App</strong>: el perfil de motor elegido,
+        el orden de las tarjetas del panel y la fuente de datos elegida para
+        algunos parámetros se guardan localmente en el dispositivo.
+      </li>
+      <li>
+        <strong>Estado de la compra</strong>: si desbloqueas la versión
+        completa con una compra dentro de la App, el estado del desbloqueo
+        se guarda localmente en el dispositivo. Los pagos los gestiona
+        íntegramente Google Play; nunca recibimos ni guardamos datos de
+        pago.
+      </li>
+    </ul>
+
+    <h2>2. Datos que no recogemos</h2>
+    <ul>
+      <li>Ninguna cuenta de usuario ni registro</li>
+      <li>Ningún servicio de analítica ni de informes de errores</li>
+      <li>Ningún SDK publicitario</li>
+      <li>
+        Ningún dato de ubicación (en Android 11 y anteriores el sistema
+        operativo exige el permiso de ubicación para buscar dispositivos
+        Bluetooth, pero la App nunca lee ni usa tu ubicación)
+      </li>
+    </ul>
+
+    <h2>3. Permisos</h2>
+    <ul>
+      <li>
+        <strong>BLUETOOTH_SCAN / BLUETOOTH_CONNECT</strong> (Android 12+):
+        para encontrar el adaptador OBD2 y conectarse a él. El permiso de
+        búsqueda se declara como no usado para deducir la ubicación.
+      </li>
+      <li>
+        <strong>BLUETOOTH / BLUETOOTH_ADMIN / ACCESS_FINE_LOCATION /
+        ACCESS_COARSE_LOCATION</strong>
+        (solo Android 11 y anteriores): los exige el sistema operativo para
+        la búsqueda Bluetooth; no se accede a ningún dato de ubicación ni se
+        guarda.
+      </li>
+      <li>
+        <strong>POST_NOTIFICATIONS</strong> (Android 13+) y
+        <strong>VIBRATE</strong>: para mostrar la notificación del control
+        en segundo plano, el aviso de regeneración y los recordatorios de la
+        Agenda.
+      </li>
+      <li>
+        <strong>RECEIVE_BOOT_COMPLETED</strong>: para volver a programar los
+        recordatorios de la Agenda después de reiniciar el teléfono.
+      </li>
+      <li>
+        <strong>BILLING</strong>: para ofrecer la compra dentro de la App
+        mediante Google Play.
+      </li>
+    </ul>
+
+    <h2>4. Servicios de terceros</h2>
+    <p>
+      La App usa los servicios de <strong>Google Play</strong> para las
+      compras dentro de la App y para comprobar si hay una versión más
+      reciente (Google Play In-App Updates). Los presta Google según su
+      propia política de privacidad:
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+      La App no integra ningún otro SDK de terceros que recoja datos.
+    </p>
+
+    <h2>5. Conservación y eliminación de los datos</h2>
+    <p>
+      Todo lo que guarda la App se queda en tu dispositivo. Si la copia de
+      seguridad de Android está activada en tu cuenta de Google, Android
+      puede incluir los datos de la App (Agenda incluida) en la copia de tu
+      dispositivo, para restaurarlos en un teléfono nuevo; esa copia la
+      gestiona Google según su propia política de privacidad y nosotros no
+      tenemos acceso a ella. Puedes borrar los datos de la App cuando
+      quieras desinstalándola o borrando sus datos en Ajustes de Android →
+      Aplicaciones → DPF Guard → Almacenamiento → Borrar datos.
+    </p>
+
+    <h2>6. Privacidad de los menores</h2>
+    <p>
+      La App no está dirigida a menores de 13 años y no recoge
+      conscientemente información de menores.
+    </p>
+
+    <h2>7. Cambios en esta política</h2>
+    <p>
+      Si hacemos cambios importantes en esta política, actualizaremos la
+      fecha de «Última actualización» al principio de esta página.
+    </p>
+
+    <h2>8. Contacto</h2>
+    <p>
+      Para cualquier pregunta sobre esta política de privacidad, escribe a
+      <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="/es/">Inicio</a>
+      <a href="/es/#contact">Contacto</a>
+      <a href="/privacy/">English</a>
+    </div>
+    © 2026 DPF Guard
+  </div>
+</footer>
+
+</body>
+</html>
