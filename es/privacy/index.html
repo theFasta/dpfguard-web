@@ -26,7 +26,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Política de privacidad</h1>
-    <p class="updated">Última actualización: 25 de octubre de 2026 (versión 1.2.1)</p>
+    <p class="updated">Última actualización: 28 de octubre de 2026 (versión 1.5.0)</p>
 
     <p>
       DPF Guard («la App») es una aplicación para Android que lee datos OBD2
@@ -117,6 +117,14 @@
         <strong>VIBRATE</strong>: para mostrar la notificación del control
         en segundo plano, el aviso de regeneración y los recordatorios de la
         Agenda.
+      </li>
+      <li>
+        <strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_CONNECTED_DEVICE</strong>:
+        mientras la App está conectada al adaptador OBD2, un servicio en
+        primer plano con una notificación visible (estado del FAP, hollín,
+        temperatura) le permite seguir leyendo la centralita del motor con
+        la pantalla apagada, para que el aviso de regeneración llegue también
+        con el móvil en el bolsillo. Se detiene al desconectar.
       </li>
       <li>
         <strong>RECEIVE_BOOT_COMPLETED</strong>: para volver a programar los

@@ -26,7 +26,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 25 October 2026 (version 1.2.1)</p>
+    <p class="updated">Last updated: 28 October 2026 (version 1.5.0)</p>
 
     <p>
       DPF Guard ("the App") is an Android application that reads live OBD2
@@ -112,6 +112,14 @@
         <strong>POST_NOTIFICATIONS</strong> (Android 13+) and
         <strong>VIBRATE</strong> — to show the background monitoring
         notification, the regeneration alert and the Planner reminders.
+      </li>
+      <li>
+        <strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_CONNECTED_DEVICE</strong>
+        — while the App is connected to the OBD2 adapter, a foreground
+        service with a visible notification (DPF state, soot, temperature)
+        keeps it reading the engine control unit with the screen off, so the
+        regeneration alert also arrives with the phone in your pocket. It
+        stops when you disconnect.
       </li>
       <li>
         <strong>RECEIVE_BOOT_COMPLETED</strong> — to schedule the Planner
