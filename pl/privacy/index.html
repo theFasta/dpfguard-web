@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Polityka prywatności</title>
+<meta name="description" content="Polityka prywatności aplikacji DPF Guard na Androida.">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="canonical" href="https://dpfguard.it/pl/privacy/">
+<link rel="alternate" hreflang="it" href="https://dpfguard.it/it/privacy/">
+<link rel="alternate" hreflang="en" href="https://dpfguard.it/privacy/">
+<link rel="alternate" hreflang="fr" href="https://dpfguard.it/fr/privacy/">
+<link rel="alternate" hreflang="de" href="https://dpfguard.it/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://dpfguard.it/es/privacy/">
+<link rel="alternate" hreflang="ro" href="https://dpfguard.it/ro/privacy/">
+<link rel="alternate" hreflang="pl" href="https://dpfguard.it/pl/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://dpfguard.it/privacy/">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/pl/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Polityka prywatności</h1>
+    <p class="updated">Ostatnia aktualizacja: 31 października 2026 (wersja 1.5.0)</p>
+
+    <p>
+      DPF Guard („Aplikacja”) to aplikacja na Androida, która odczytuje na
+      żywo dane OBD2 ze sterownika silnika pojazdu przez adapter OBD2
+      Bluetooth (Bluetooth Low Energy lub Bluetooth Classic) i wyświetla na
+      ekranie diagnostykę filtra cząstek stałych (DPF/FAP). Zawiera też
+      Terminarz serwisowy, który przypomina o terminach Twojego auta
+      (serwis, ubezpieczenie, przegląd techniczny i tak dalej).
+    </p>
+
+    <h2>1. Jakie dane zbieramy</h2>
+    <p>
+      Aplikacja nie zbiera danych osobowych. Nic z tego, co odczytuje lub
+      zapisuje, nie jest wysyłane do nas ani na żaden nasz serwer, chyba że
+      sam zdecydujesz się wysłać nam to e-mailem (zobacz „Skany silnika,
+      które zdecydujesz się wysłać” poniżej). Szczegółowo:
+    </p>
+    <ul>
+      <li>
+        <strong>Wyniki wyszukiwania Bluetooth</strong>: nazwy i siła
+        sygnału adapterów są wyświetlane podczas wyszukiwania i nigdy nie są
+        zapisywane ani przesyłane poza urządzenie.
+      </li>
+      <li>
+        <strong>Odczyty z pojazdu</strong>: wartości na żywo (masa sadzy,
+        temperatury, ciśnienia, prędkość itp.) są wyświetlane na ekranie i
+        nie są rejestrowane ani przesyłane. Aplikacja zachowuje tylko stan
+        licznika na końcu ostatniej wykrytej regeneracji, aby obliczyć
+        przejechany od tego czasu dystans, oraz stany licznika używane przez
+        Terminarz (zobacz niżej), wszystko zapisane lokalnie na urządzeniu.
+      </li>
+      <li>
+        <strong>Dane Terminarza</strong>: dodane przez Ciebie auta (nadana
+        im nazwa i typ silnika), terminy, prace oznaczone jako wykonane wraz
+        z datą, przebiegiem i opcjonalną notatką oraz stany licznika
+        odczytane z auta lub wpisane przez Ciebie, używane do oszacowania,
+        kiedy przypada termin według przebiegu. Zapisane lokalnie na
+        urządzeniu.
+      </li>
+      <li>
+        <strong>Odcisk pojazdu</strong>: aby rozpoznać, do którego z Twoich
+        aut podłączony jest adapter, Aplikacja odczytuje numer
+        identyfikacyjny pojazdu (VIN) i zapisuje tylko jego jednokierunkowy
+        odcisk (skrót SHA-256), nigdy sam numer VIN. Z odcisku nie da się
+        odtworzyć numeru VIN.
+      </li>
+      <li>
+        <strong>Ustawienia Aplikacji</strong>: wybrany profil silnika,
+        kolejność kart i źródło danych wybrane dla niektórych parametrów są
+        zapisywane lokalnie na urządzeniu.
+      </li>
+      <li>
+        <strong>Stan zakupu</strong>: jeśli odblokujesz pełną wersję zakupem
+        w aplikacji, stan odblokowania jest zapisywany lokalnie na
+        urządzeniu. Płatności obsługuje w całości Google Play; nigdy nie
+        otrzymujemy ani nie przechowujemy danych płatniczych.
+      </li>
+      <li>
+        <strong>Skany silnika, które zdecydujesz się wysłać</strong>: aby
+        pomóc nam w obsłudze nowego silnika, możesz zlecić Aplikacji
+        przeskanowanie sterownika silnika Twojego auta (na jakie kody
+        odpowiada i z jakimi wartościami) i zapisać wynik w pliku na
+        telefonie. Nic nie jest wysyłane automatycznie: to Ty decydujesz,
+        czy wysłać plik e-mailem z telefonu na
+        <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>. Plik
+        nie zawiera danych osobowych (ani imienia, ani lokalizacji, ani
+        numeru rejestracyjnego); z numeru VIN zachowuje tylko pierwsze 11
+        znaków, które wskazują markę, model, silnik i rok, ale nie
+        konkretne auto. Używamy tych plików wyłącznie do dodawania obsługi
+        silników i nikomu ich nie udostępniamy. Jak przy każdym e-mailu,
+        otrzymujemy Twój adres e-mail: używamy go tylko do odpowiedzi i na
+        prośbę usuwamy Twoje wiadomości.
+      </li>
+    </ul>
+
+    <h2>2. Jakich danych nie zbieramy</h2>
+    <ul>
+      <li>Brak kont i rejestracji</li>
+      <li>Brak usług statystyk i raportowania awarii</li>
+      <li>Brak bibliotek reklamowych</li>
+      <li>
+        Brak danych o lokalizacji (do Androida 11 system wymaga uprawnienia
+        do lokalizacji, aby wyszukiwać urządzenia Bluetooth, ale Aplikacja
+        nigdy nie odczytuje ani nie używa Twojej lokalizacji)
+      </li>
+    </ul>
+
+    <h2>3. Uprawnienia</h2>
+    <ul>
+      <li>
+        <strong>BLUETOOTH_SCAN / BLUETOOTH_CONNECT</strong> (Android 12 i
+        nowsze): aby znaleźć adapter OBD2 i połączyć się z nim. Uprawnienie
+        do wyszukiwania jest zadeklarowane jako nieużywane do ustalania
+        lokalizacji.
+      </li>
+      <li>
+        <strong>BLUETOOTH / BLUETOOTH_ADMIN / ACCESS_FINE_LOCATION /
+        ACCESS_COARSE_LOCATION</strong>
+        (tylko do Androida 11): wymagane przez system do wyszukiwania
+        Bluetooth; żadne dane o lokalizacji nie są odczytywane ani
+        zapisywane.
+      </li>
+      <li>
+        <strong>POST_NOTIFICATIONS</strong> (Android 13 i nowsze) oraz
+        <strong>VIBRATE</strong>: aby wyświetlać powiadomienie o
+        monitorowaniu w tle, alert o regeneracji i przypomnienia
+        Terminarza.
+      </li>
+      <li>
+        <strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_CONNECTED_DEVICE</strong>:
+        gdy Aplikacja jest połączona z adapterem OBD2, usługa na pierwszym
+        planie z widocznym powiadomieniem (stan DPF, sadza, temperatura)
+        pozwala jej dalej odczytywać sterownik przy wyłączonym ekranie, aby
+        alert o regeneracji dotarł też z telefonem w kieszeni. Kończy się
+        po rozłączeniu.
+      </li>
+      <li>
+        <strong>RECEIVE_BOOT_COMPLETED</strong>: aby ponownie zaplanować
+        przypomnienia Terminarza po restarcie telefonu.
+      </li>
+      <li>
+        <strong>BILLING</strong>: aby oferować zakup w aplikacji przez
+        Google Play.
+      </li>
+    </ul>
+
+    <h2>4. Usługi stron trzecich</h2>
+    <p>
+      Aplikacja korzysta z usług <strong>Google Play</strong> do zakupów w
+      aplikacji i do sprawdzania, czy dostępna jest nowsza wersja (Google
+      Play In-App Updates). Zapewnia je Google zgodnie z własną polityką
+      prywatności:
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+      Aplikacja nie zawiera żadnej innej biblioteki stron trzecich, która
+      zbiera dane.
+    </p>
+
+    <h2>5. Przechowywanie i usuwanie danych</h2>
+    <p>
+      Wszystko, co Aplikacja zapisuje, zostaje na Twoim urządzeniu. Jeśli
+      kopia zapasowa Androida jest włączona dla Twojego konta Google,
+      Android może dołączyć dane Aplikacji (w tym Terminarz) do kopii
+      zapasowej urządzenia, aby przywrócić je na nowym telefonie; tą kopią
+      zarządza Google zgodnie z własną polityką prywatności i nie mamy do
+      niej dostępu. Dane Aplikacji możesz w każdej chwili usunąć,
+      odinstalowując ją lub czyszcząc jej dane w Ustawieniach Androida →
+      Aplikacje → DPF Guard → Pamięć → Wyczyść dane.
+    </p>
+
+    <h2>6. Dzieci</h2>
+    <p>
+      Aplikacja nie jest skierowana do dzieci poniżej 13 roku życia i
+      świadomie nie zbiera informacji o nich.
+    </p>
+
+    <h2>7. Zmiany tej polityki</h2>
+    <p>
+      Jeśli wprowadzimy istotne zmiany w tej polityce, zaktualizujemy datę
+      „Ostatnia aktualizacja” na górze tej strony.
+    </p>
+
+    <h2>8. Kontakt</h2>
+    <p>
+      W razie pytań dotyczących tej polityki prywatności napisz na
+      <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="/pl/">Strona główna</a>
+      <a href="/pl/#contact">Kontakt</a>
+      <a href="/it/privacy/">Italiano</a>
+      <a href="/privacy/">English</a>
+      <a href="/fr/privacy/">Français</a>
+      <a href="/de/privacy/">Deutsch</a>
+      <a href="/es/privacy/">Español</a>
+      <a href="/ro/privacy/">Română</a>
+    </div>
+    © 2026 DPF Guard
+  </div>
+</footer>
+
+</body>
+</html>
