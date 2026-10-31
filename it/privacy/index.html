@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Informativa sulla privacy</title>
+<meta name="description" content="Informativa sulla privacy dell'app Android DPF Guard.">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="canonical" href="https://dpfguard.it/it/privacy/">
+<link rel="alternate" hreflang="it" href="https://dpfguard.it/it/privacy/">
+<link rel="alternate" hreflang="en" href="https://dpfguard.it/privacy/">
+<link rel="alternate" hreflang="fr" href="https://dpfguard.it/fr/privacy/">
+<link rel="alternate" hreflang="de" href="https://dpfguard.it/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://dpfguard.it/es/privacy/">
+<link rel="alternate" hreflang="ro" href="https://dpfguard.it/ro/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://dpfguard.it/privacy/">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Informativa sulla privacy</h1>
+    <p class="updated">Ultimo aggiornamento: 31 ottobre 2026 (versione 1.5.0)</p>
+
+    <p>
+      DPF Guard ("l'App") è un'applicazione Android che legge in tempo reale
+      i dati OBD2 della centralina motore di un veicolo tramite un adattatore
+      OBD2 Bluetooth (Bluetooth Low Energy o Bluetooth Classic) e mostra a
+      schermo la diagnostica del filtro antiparticolato (FAP/DPF). Comprende
+      anche un'Agenda della manutenzione che ricorda le scadenze dell'auto
+      (tagliando, assicurazione, bollo e così via).
+    </p>
+
+    <h2>1. Dati che raccogliamo</h2>
+    <p>
+      L'App non raccoglie dati personali. Niente di ciò che legge o salva
+      viene inviato a noi o a un nostro server, a meno che non sia tu a
+      decidere di mandarcelo per email (vedi "Scansioni del motore che
+      scegli di inviarci" più sotto). In particolare:
+    </p>
+    <ul>
+      <li>
+        <strong>Risultati della ricerca Bluetooth</strong>: nomi e potenza
+        del segnale degli adattatori sono mostrati durante la ricerca e non
+        vengono mai salvati né trasmessi fuori dal dispositivo.
+      </li>
+      <li>
+        <strong>Letture del veicolo</strong>: i valori in tempo reale
+        (massa di fuliggine, temperature, pressioni, velocità e così via)
+        sono mostrati a schermo e non vengono registrati né trasmessi.
+        L'App conserva solo il valore del contachilometri alla fine
+        dell'ultima rigenerazione rilevata, per calcolare i km percorsi da
+        allora, e i valori del contachilometri usati dall'Agenda (vedi
+        sotto), tutti salvati localmente sul dispositivo.
+      </li>
+      <li>
+        <strong>Dati dell'Agenda</strong>: le auto che aggiungi (il nome che
+        dai loro e il tipo di motore), le scadenze, i lavori segnati come
+        fatti con data, chilometri ed eventuale nota, e i valori del
+        contachilometri letti dall'auto o inseriti da te, usati per stimare
+        quando arriva una scadenza a chilometri. Salvati localmente sul
+        dispositivo.
+      </li>
+      <li>
+        <strong>Impronta del veicolo</strong>: per riconoscere a quale delle
+        tue auto è collegato l'adattatore, l'App legge il numero di telaio
+        (VIN) e ne salva solo un'impronta non reversibile (un hash SHA-256),
+        mai il VIN stesso. Dall'impronta non si può risalire al VIN.
+      </li>
+      <li>
+        <strong>Preferenze dell'App</strong>: il profilo motore scelto,
+        l'ordine delle card e la sorgente dei dati scelta per alcuni
+        parametri sono salvati localmente sul dispositivo.
+      </li>
+      <li>
+        <strong>Stato dell'acquisto</strong>: se sblocchi la versione
+        completa con un acquisto in-app, lo stato dello sblocco è salvato
+        localmente sul dispositivo. I pagamenti sono gestiti interamente da
+        Google Play; non riceviamo né conserviamo mai dati di pagamento.
+      </li>
+      <li>
+        <strong>Scansioni del motore che scegli di inviarci</strong>: per
+        aiutarci a supportare un motore nuovo, puoi far scansionare all'App
+        la centralina motore della tua auto (a quali codici risponde e con
+        quali valori) e salvarne il risultato in un file sul telefono. Non
+        viene inviato niente in automatico: sei tu a decidere se mandare il
+        file, per email dal tuo telefono, a
+        <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>. Il
+        file non contiene dati personali (né nome, né posizione, né targa);
+        del numero di telaio (VIN) conserva solo i primi 11 caratteri, che
+        indicano marca, modello, motore e anno ma non la singola auto.
+        Usiamo questi file solo per aggiungere il supporto dei motori e non
+        li diamo a nessuno. Come per ogni email, riceviamo il tuo indirizzo
+        email: lo usiamo solo per risponderti e cancelliamo i tuoi messaggi
+        se ce lo chiedi.
+      </li>
+    </ul>
+
+    <h2>2. Dati che non raccogliamo</h2>
+    <ul>
+      <li>Nessun account né registrazione</li>
+      <li>Nessun servizio di statistiche o di segnalazione degli arresti anomali</li>
+      <li>Nessuna libreria pubblicitaria</li>
+      <li>
+        Nessun dato di posizione (fino ad Android 11 il sistema operativo
+        richiede il permesso di posizione per cercare dispositivi Bluetooth,
+        ma l'App non legge né usa mai la tua posizione)
+      </li>
+    </ul>
+
+    <h2>3. Permessi</h2>
+    <ul>
+      <li>
+        <strong>BLUETOOTH_SCAN / BLUETOOTH_CONNECT</strong> (Android 12 e
+        successivi): per trovare l'adattatore OBD2 e collegarsi. Il permesso
+        di ricerca è dichiarato come non usato per ricavare la posizione.
+      </li>
+      <li>
+        <strong>BLUETOOTH / BLUETOOTH_ADMIN / ACCESS_FINE_LOCATION /
+        ACCESS_COARSE_LOCATION</strong>
+        (solo fino ad Android 11): richiesti dal sistema operativo per la
+        ricerca Bluetooth; nessun dato di posizione viene letto o salvato.
+      </li>
+      <li>
+        <strong>POST_NOTIFICATIONS</strong> (Android 13 e successivi) e
+        <strong>VIBRATE</strong>: per mostrare la notifica del monitoraggio
+        in background, l'avviso di rigenerazione e i promemoria dell'Agenda.
+      </li>
+      <li>
+        <strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_CONNECTED_DEVICE</strong>:
+        mentre l'App è collegata all'adattatore OBD2, un servizio in primo
+        piano con una notifica visibile (stato del FAP, fuliggine,
+        temperatura) le permette di continuare a leggere la centralina a
+        schermo spento, così l'avviso di rigenerazione arriva anche con il
+        telefono in tasca. Si ferma quando ti scolleghi.
+      </li>
+      <li>
+        <strong>RECEIVE_BOOT_COMPLETED</strong>: per programmare di nuovo i
+        promemoria dell'Agenda dopo il riavvio del telefono.
+      </li>
+      <li>
+        <strong>BILLING</strong>: per offrire l'acquisto in-app tramite
+        Google Play.
+      </li>
+    </ul>
+
+    <h2>4. Servizi di terze parti</h2>
+    <p>
+      L'App si appoggia ai servizi di <strong>Google Play</strong> per gli
+      acquisti in-app e per controllare se è disponibile una versione più
+      recente (Google Play In-App Updates). Sono forniti da Google secondo la
+      sua informativa sulla privacy:
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+      L'App non integra altre librerie di terze parti che raccolgono dati.
+    </p>
+
+    <h2>5. Conservazione e cancellazione dei dati</h2>
+    <p>
+      Tutto ciò che l'App salva resta sul tuo dispositivo. Se il backup di
+      Android è attivo per il tuo account Google, Android può includere i
+      dati dell'App (Agenda compresa) nel backup del dispositivo, per
+      ripristinarli su un telefono nuovo; quel backup è gestito da Google
+      secondo la sua informativa sulla privacy e noi non vi abbiamo accesso.
+      Puoi cancellare i dati dell'App in qualsiasi momento disinstallandola
+      o cancellandone i dati da Impostazioni di Android → App → DPF Guard →
+      Spazio di archiviazione → Cancella dati.
+    </p>
+
+    <h2>6. Minori</h2>
+    <p>
+      L'App non è rivolta ai minori di 13 anni e non raccoglie
+      consapevolmente informazioni su di loro.
+    </p>
+
+    <h2>7. Modifiche a questa informativa</h2>
+    <p>
+      Se apportiamo modifiche sostanziali a questa informativa, aggiorniamo
+      la data di "Ultimo aggiornamento" in cima alla pagina.
+    </p>
+
+    <h2>8. Contatti</h2>
+    <p>
+      Per qualsiasi domanda su questa informativa, scrivi a
+      <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="/">Home</a>
+      <a href="/#contact">Contatti</a>
+      <a href="/privacy/">English</a>
+      <a href="/fr/privacy/">Français</a>
+      <a href="/de/privacy/">Deutsch</a>
+      <a href="/es/privacy/">Español</a>
+      <a href="/ro/privacy/">Română</a>
+    </div>
+    © 2026 DPF Guard
+  </div>
+</footer>
+
+</body>
+</html>
