@@ -297,6 +297,8 @@ footer.site .foot-links {
   flex-wrap: wrap;
 }
 
+footer.site .foot-note { max-width: 640px; margin: 0 auto 10px; line-height: 1.5; }
+
 /* Legal pages (privacy policy) */
 .legal { padding: 40px 0 64px; }
 .legal .wrap { max-width: 760px; }
