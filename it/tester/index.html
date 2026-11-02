@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Istruzioni per i tester</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .legal ol.todo { padding-left: 22px; }
+  .legal ol.todo li { margin: 6px 0; }
+  .shot { display: flex; gap: 24px; align-items: flex-start; margin: 18px 0 28px; flex-wrap: wrap; }
+  .shot img { width: 260px; border-radius: 14px; border: 1px solid var(--surface-2); }
+  .shot .txt { flex: 1 1 260px; min-width: 0; }
+  .shot img { max-width: 100%; }
+  .legal { overflow-wrap: anywhere; }
+  .note { background: var(--surface); border-left: 4px solid #ffd400; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Istruzioni per i tester</h1>
+    <p class="updated">Ultimo aggiornamento: 2 novembre 2026 (versione 1.6.1+75)</p>
+
+    <p>
+      Grazie di aiutarci! Con la versione di prova di DPF Guard registri
+      quello che dice la centralina della tua auto mentre guidi. Da quei
+      dati capiamo dove il tuo motore tiene i valori del filtro
+      antiparticolato (fuliggine, rigenerazione, km), per poterli mostrare
+      nell'app.
+    </p>
+
+    <div class="note">
+      In breve: <strong>scegli il motore</strong>, <strong>fai una volta la
+      Scansione completa</strong> fino a «Fatta!», poi <strong>apri la
+      Probe a ogni giro</strong> e mandaci i giri da «Giri registrati».
+      Tutto il resto va avanti da solo.
+    </div>
+
+    <h2>Prima di iniziare</h2>
+    <ol class="todo">
+      <li>Aggiorna DPF Guard dal Play Store. Le versioni di prova a volte
+        compaiono qualche ora dopo.</li>
+      <li>Controlla di avere la versione giusta: in DPF Guard tocca
+        l'icona <strong>i</strong> in alto a destra (Info). Deve comparire
+        <strong>1.6.1+75</strong> o un numero più alto.</li>
+    </ol>
+
+    <h2>1. Scegli il motore</h2>
+    <div class="shot">
+      <img src="/assets/tester/1_cambia_motore.jpg" alt="Icona Cambia motore in alto a sinistra">
+      <div class="txt">
+        <p>Prima di collegarti al dongle, tocca l'icona in alto a sinistra
+          e scegli il motore che ti abbiamo indicato per la tua auto.</p>
+        <p><strong>Se usi più auto</strong>, cambia motore ogni volta che
+          cambi auto: è l'errore più facile da fare.</p>
+      </div>
+    </div>
+
+    <h2>2. Collegati e apri la Probe</h2>
+    <div class="shot">
+      <img src="/assets/tester/2_probe.jpg" alt="Icona della Probe in alto a destra nella schermata FAP">
+      <div class="txt">
+        <p>Con il motore acceso, tocca <strong>Cerca dispositivi</strong> e
+          scegli il tuo dongle. Quando sei collegato, tocca l'icona della
+          <strong>Probe</strong> in alto a destra.</p>
+        <p>Se il tuo motore non è ancora supportato, la schermata FAP resta
+          vuota o con pochi valori: è normale, non stai sbagliando niente.
+          I valori arrivano proprio dai giri che ci mandi. (L'immagine qui a
+          fianco viene da un motore già supportato.)</p>
+      </div>
+    </div>
+
+    <h2>3. La Scansione completa, una volta sola</h2>
+    <div class="shot">
+      <img src="/assets/tester/3_scansione_e_giri.jpg" alt="Nella Probe: icona della Scansione completa e pulsante Giri registrati">
+      <div class="txt">
+        <p>Dentro la Probe tocca l'icona della <strong>lente con le
+          righe</strong>, poi <strong>Avvia</strong>. La scansione prova
+          tutti gli indirizzi della centralina: circa 77 minuti in tutto.
+          Solo lettura, non modifica niente.</p>
+        <ul>
+          <li><strong>Puoi farla durante un normale giro in auto</strong>:
+            non serve stare fermi.</li>
+          <li><strong>Non serve farla tutta in una volta</strong>: se spegni
+            il motore o esci dalla Probe, la volta dopo riprende da sola da
+            dove era rimasta.</li>
+          <li>Mentre gira non toccare le altre icone della Probe.</li>
+          <li>Quando dice <strong>«Fatta!»</strong> non serve più: mandaci
+            quel giro (punto 5).</li>
+        </ul>
+        <p>Se ti abbiamo detto che per la tua auto la scansione è già
+          fatta, salta questo punto.</p>
+      </div>
+    </div>
+
+    <h2>4. A ogni giro</h2>
+    <ol class="todo">
+      <li>Prima di partire: collegati al dongle e apri la Probe.</li>
+      <li>Guida normalmente, senza toccare il telefono: la Probe registra
+        da sola e salva il giro ogni minuto e quando esci.</li>
+      <li>Se ti accorgi che è partita una <strong>rigenerazione</strong>
+        (ventola che resta accesa, minimo più alto, odore di bruciato) e
+        sei fermo in sicurezza, puoi toccare <strong>Segna evento</strong>.
+        Non è obbligatorio: il giro ci serve lo stesso.</li>
+    </ol>
+
+    <h2>5. Mandarci i dati</h2>
+    <p>
+      Nella Probe tocca <strong>Giri registrati</strong>, poi
+      <strong>Invia</strong> sul giro che vuoi mandare (o <strong>Invia
+      tutti</strong>). Il file parte per email, WhatsApp o come preferisci.
+    </p>
+    <p>Non serve mandare ogni giro. Ci servono soprattutto:</p>
+    <ul>
+      <li>il giro in cui la Scansione completa dice «Fatta!»;</li>
+      <li>i giri in cui è partita una rigenerazione;</li>
+      <li>i giri che ti chiediamo noi per email.</li>
+    </ul>
+
+    <h2>I tuoi dati</h2>
+    <p>
+      I file non contengono dati personali: solo i valori letti dalla
+      centralina. Del numero di telaio (VIN) l'app tiene solo i primi 11
+      caratteri, che dicono marca, modello e anno ma non quale auto sia.
+      Dettagli nell'<a href="/it/privacy/">informativa sulla privacy</a>.
+    </p>
+
+    <h2>Dubbi?</h2>
+    <p>
+      Scrivici a <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>,
+      anche solo per chiedere se stai facendo bene. Grazie!
+    </p>
+  </div>
+</main>
+
+</body>
+</html>
