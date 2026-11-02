@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Instrucciones para los testers</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .legal ol.todo { padding-left: 22px; }
+  .legal ol.todo li { margin: 6px 0; }
+  .shot { display: flex; gap: 24px; align-items: flex-start; margin: 18px 0 28px; flex-wrap: wrap; }
+  .shot img { width: 260px; border-radius: 14px; border: 1px solid var(--surface-2); }
+  .shot .txt { flex: 1 1 260px; min-width: 0; }
+  .shot img { max-width: 100%; }
+  .legal { overflow-wrap: anywhere; }
+  .note { background: var(--surface); border-left: 4px solid #ffd400; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Instrucciones para los testers</h1>
+    <p class="updated">Última actualización: 2 de noviembre de 2026 (versión 1.6.1+75)</p>
+
+    <p>
+      ¡Gracias por ayudarnos! Con la versión de prueba de DPF Guard grabas
+      lo que dice la centralita de tu coche mientras conduces. Con esos
+      datos averiguamos dónde guarda tu motor los valores del filtro de
+      partículas (hollín, regeneración, km), para poder mostrarlos en la app.
+    </p>
+
+    <div class="note">
+      En resumen: <strong>elige el motor</strong>, <strong>haz una vez el
+      Escaneo completo</strong> hasta «¡Hecho!», luego <strong>abre la
+      Probe en cada trayecto</strong> y mándanos los trayectos desde
+      «Trayectos guardados». Todo lo demás va solo.
+    </div>
+
+    <h2>Antes de empezar</h2>
+    <ol class="todo">
+      <li>Actualiza DPF Guard desde Play Store. Las versiones de prueba a
+        veces aparecen unas horas más tarde.</li>
+      <li>Comprueba que tienes la versión correcta: en DPF Guard toca el
+        icono <strong>i</strong> arriba a la derecha (Info). Debe poner
+        <strong>1.6.1+75</strong> o un número más alto.</li>
+    </ol>
+
+    <h2>1. Elige el motor</h2>
+    <div class="shot">
+      <img src="/assets/tester/es/1_cambia_motore.jpg" alt="Icono Cambiar motor arriba a la izquierda">
+      <div class="txt">
+        <p>Antes de conectarte al adaptador, toca el icono de arriba a la
+          izquierda y elige el motor que te hemos indicado para tu coche.</p>
+        <p><strong>Si usas más de un coche</strong>, cambia el motor cada
+          vez que cambies de coche: es el error más fácil.</p>
+      </div>
+    </div>
+
+    <h2>2. Conéctate y abre la Probe</h2>
+    <div class="shot">
+      <img src="/assets/tester/es/2_probe.jpg" alt="Icono de la Probe arriba a la derecha en la pantalla FAP">
+      <div class="txt">
+        <p>Con el motor en marcha, toca <strong>Buscar dispositivos</strong>
+          y elige tu adaptador. Cuando estés conectado, toca el icono de la
+          <strong>Probe</strong> arriba a la derecha.</p>
+        <p>Si tu motor todavía no es compatible, la pantalla FAP queda vacía
+          o con pocos valores: es normal, no estás haciendo nada mal. Los
+          valores salen justamente de los trayectos que nos mandas. (La
+          imagen de al lado viene de un motor ya compatible.)</p>
+      </div>
+    </div>
+
+    <h2>3. El Escaneo completo, una sola vez</h2>
+    <div class="shot">
+      <img src="/assets/tester/es/3_scansione_e_giri.jpg" alt="Dentro de la Probe: icono del Escaneo completo y botón Trayectos guardados">
+      <div class="txt">
+        <p>Dentro de la Probe toca el icono de la <strong>lupa con
+          líneas</strong>, luego <strong>Iniciar</strong>. El escaneo prueba
+          todas las direcciones de la centralita: unos 77 minutos en total.
+          Solo lectura, no cambia nada.</p>
+        <ul>
+          <li><strong>Puedes hacerlo durante un trayecto normal</strong>: no
+            hace falta estar parado.</li>
+          <li><strong>No hace falta hacerlo de una vez</strong>: si apagas el
+            motor o sales de la Probe, la próxima vez sigue solo desde donde
+            se quedó.</li>
+          <li>Mientras funciona, no toques los otros iconos de la Probe.</li>
+          <li>Cuando diga <strong>«¡Hecho!»</strong> ya no hace falta:
+            mándanos ese trayecto (punto 5).</li>
+        </ul>
+        <p>Si te hemos dicho que para tu coche el escaneo ya está hecho,
+          sáltate este punto.</p>
+      </div>
+    </div>
+
+    <h2>4. En cada trayecto</h2>
+    <ol class="todo">
+      <li>Antes de salir: conéctate al adaptador y abre la Probe.</li>
+      <li>Conduce con normalidad, sin tocar el teléfono: la Probe graba sola
+        y guarda el trayecto cada minuto y al salir.</li>
+      <li>Si notas que ha empezado una <strong>regeneración</strong>
+        (ventilador que sigue encendido, ralentí más alto, olor a quemado)
+        y estás parado en un lugar seguro, puedes tocar <strong>Segna
+        evento</strong> («marcar evento», el botón de abajo a la derecha,
+        todavía en italiano). No es obligatorio: el trayecto nos sirve
+        igual.</li>
+    </ol>
+
+    <h2>5. Mandarnos los datos</h2>
+    <p>
+      En la Probe toca <strong>Trayectos guardados</strong>, luego
+      <strong>Enviar</strong> en el trayecto que quieras mandar (o
+      <strong>Enviar todos</strong>). El archivo sale por correo, WhatsApp
+      o como prefieras.
+    </p>
+    <p>No hace falta mandar todos los trayectos. Nos sirven sobre todo:</p>
+    <ul>
+      <li>el trayecto en el que el Escaneo completo dice «¡Hecho!»;</li>
+      <li>los trayectos en los que empezó una regeneración;</li>
+      <li>los trayectos que te pidamos por correo.</li>
+    </ul>
+
+    <h2>Tus datos</h2>
+    <p>
+      Los archivos no contienen datos personales: solo los valores leídos
+      de la centralita. Del número de bastidor (VIN) la app guarda solo los
+      primeros 11 caracteres, que dicen marca, modelo y año pero no qué
+      coche es. Detalles en la <a href="/es/privacy/">política de
+      privacidad</a>.
+    </p>
+
+    <h2>¿Dudas?</h2>
+    <p>
+      Escríbenos a <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>,
+      aunque sea solo para preguntar si lo estás haciendo bien. ¡Gracias!
+    </p>
+  </div>
+</main>
+
+</body>
+</html>

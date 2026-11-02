@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Instructions for testers</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .legal ol.todo { padding-left: 22px; }
+  .legal ol.todo li { margin: 6px 0; }
+  .shot { display: flex; gap: 24px; align-items: flex-start; margin: 18px 0 28px; flex-wrap: wrap; }
+  .shot img { width: 260px; border-radius: 14px; border: 1px solid var(--surface-2); }
+  .shot .txt { flex: 1 1 260px; min-width: 0; }
+  .shot img { max-width: 100%; }
+  .legal { overflow-wrap: anywhere; }
+  .note { background: var(--surface); border-left: 4px solid #ffd400; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Instructions for testers</h1>
+    <p class="updated">Last updated: 2 November 2026 (version 1.6.1+75)</p>
+
+    <p>
+      Thank you for helping us! With the test version of DPF Guard you
+      record what your car's engine computer says while you drive. From
+      that data we find out where your engine keeps the particulate filter
+      values (soot, regeneration, km), so that the app can show them.
+    </p>
+
+    <div class="note">
+      In short: <strong>choose the engine</strong>, <strong>run the Full
+      scan once</strong> until «Done!», then <strong>open the Probe on
+      every drive</strong> and send us your drives from «Saved drives».
+      Everything else runs by itself.
+    </div>
+
+    <h2>Before you start</h2>
+    <ol class="todo">
+      <li>Update DPF Guard from the Play Store. Test versions sometimes
+        show up a few hours later.</li>
+      <li>Check that you have the right version: in DPF Guard tap the
+        <strong>i</strong> icon at the top right (Info). It must say
+        <strong>1.6.1+75</strong> or a higher number.</li>
+    </ol>
+
+    <h2>1. Choose the engine</h2>
+    <div class="shot">
+      <img src="/assets/tester/en/1_cambia_motore.jpg" alt="Change engine icon at the top left">
+      <div class="txt">
+        <p>Before connecting to the dongle, tap the icon at the top left
+          and choose the engine we told you for your car.</p>
+        <p><strong>If you use more than one car</strong>, change the engine
+          every time you change car: it is the easiest mistake to make.</p>
+      </div>
+    </div>
+
+    <h2>2. Connect and open the Probe</h2>
+    <div class="shot">
+      <img src="/assets/tester/en/2_probe.jpg" alt="Probe icon at the top right of the DPF screen">
+      <div class="txt">
+        <p>With the engine running, tap <strong>Search for devices</strong>
+          and pick your dongle. Once connected, tap the
+          <strong>Probe</strong> icon at the top right.</p>
+        <p>If your engine is not supported yet, the DPF screen stays empty
+          or shows only a few values: that is normal, you are not doing
+          anything wrong. The values come precisely from the drives you
+          send us. (The picture next to this text comes from an engine that
+          is already supported.)</p>
+      </div>
+    </div>
+
+    <h2>3. The Full scan, once only</h2>
+    <div class="shot">
+      <img src="/assets/tester/en/3_scansione_e_giri.jpg" alt="Inside the Probe: Full scan icon and Saved drives button">
+      <div class="txt">
+        <p>Inside the Probe tap the <strong>magnifying glass with
+          lines</strong> icon, then <strong>Start</strong>. The scan tries
+          every address of the engine computer: about 77 minutes in all.
+          Read only, it changes nothing.</p>
+        <ul>
+          <li><strong>You can do it during a normal drive</strong>: no need
+            to stand still.</li>
+          <li><strong>No need to do it all at once</strong>: if you switch
+            off the engine or leave the Probe, next time it carries on by
+            itself from where it stopped.</li>
+          <li>While it runs, don't touch the other icons of the Probe.</li>
+          <li>When it says <strong>«Done!»</strong> it is no longer needed:
+            send us that drive (step 5).</li>
+        </ul>
+        <p>If we told you that the scan is already done for your car, skip
+          this step.</p>
+      </div>
+    </div>
+
+    <h2>4. On every drive</h2>
+    <ol class="todo">
+      <li>Before leaving: connect to the dongle and open the Probe.</li>
+      <li>Drive normally, without touching the phone: the Probe records by
+        itself and saves the drive every minute and when you leave.</li>
+      <li>If you notice that a <strong>regeneration</strong> has started
+        (fan staying on, higher idle, burning smell) and you are stopped
+        safely, you can tap <strong>Segna evento</strong> ("mark event",
+        the button at the bottom right, still in Italian). It is not
+        required: the drive is useful anyway.</li>
+    </ol>
+
+    <h2>5. Sending us the data</h2>
+    <p>
+      In the Probe tap <strong>Saved drives</strong>, then
+      <strong>Send</strong> on the drive you want to send (or <strong>Send
+      all</strong>). The file goes by email, WhatsApp or however you prefer.
+    </p>
+    <p>No need to send every drive. We mostly need:</p>
+    <ul>
+      <li>the drive in which the Full scan says «Done!»;</li>
+      <li>the drives in which a regeneration started;</li>
+      <li>the drives we ask you for by email.</li>
+    </ul>
+
+    <h2>Your data</h2>
+    <p>
+      The files contain no personal data: only the values read from the
+      engine computer. Of the chassis number (VIN) the app keeps only the
+      first 11 characters, which tell make, model and year but not which
+      car it is. Details in the <a href="/privacy/">privacy policy</a>.
+    </p>
+
+    <h2>Questions?</h2>
+    <p>
+      Write to <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>,
+      even just to ask whether you are doing it right. Thank you!
+    </p>
+  </div>
+</main>
+
+</body>
+</html>
