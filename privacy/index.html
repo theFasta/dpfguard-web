@@ -31,7 +31,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 31 October 2026 (version 1.5.0)</p>
+    <p class="updated">Last updated: 7 November 2026 (version 1.8.0)</p>
 
     <p>
       DPF Guard ("the App") is an Android application that reads live OBD2
@@ -57,10 +57,13 @@
       <li>
         <strong>Vehicle readings</strong> — live values (soot mass,
         temperatures, pressures, speed, etc.) are displayed on screen and
-        are not logged or transmitted. The App keeps only the vehicle's
+        are not logged or transmitted. The App keeps the vehicle's
         odometer value at the end of the last detected regeneration, to
         compute the distance driven since then, and the odometer values used
         by the Planner (see below), all stored locally on the device.
+      </li>
+      <li>
+        <strong>Regeneration history</strong> — for each regeneration seen while connected, the App saves the start and end time, the soot at the start and at the end, the odometer at the end and whether it was interrupted. It uses them for the history, the percentage of the soot bar and the estimate of the km to the next regeneration. Stored locally on the device.
       </li>
       <li>
         <strong>Planner data</strong> — the cars you add (the name you give
@@ -83,7 +86,7 @@
       </li>
       <li>
         <strong>Purchase status</strong> — if you unlock the full version
-        through an in-app purchase, the unlock status is stored locally on
+        through an in-app purchase, the unlock status and the purchase date given by Google Play are stored locally on
         the device. Payments are handled entirely by Google Play; we never
         receive or store any payment information.
       </li>
@@ -102,6 +105,9 @@
         support and never share them. As with any email, we receive your
         email address: we use it only to reply to you, and we delete your
         messages on request.
+      </li>
+      <li>
+        <strong>Requests to be told about an engine</strong>: if you write to us (from the App, with "Tell me when my car is supported") to be told when your engine is supported, we use your email address only to reply to you and delete it when it is no longer needed.
       </li>
     </ul>
 
