@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DPF Guard — Control del FAP en tiempo real</title>
-<meta name="description" content="DPF Guard controla el filtro de partículas de tu motor diésel por OBD2: estado de la regeneración, hollín, temperatura y más, en tiempo real. Control del FAP para motores Renault/Dacia/Nissan/Mercedes 1.5 dCi/CDI (K9K) y Mercedes 2.1 CDI (OM651); datos del motor y códigos de avería gratis para cualquier coche OBD2.">
+<meta name="description" content="DPF Guard controla el filtro de partículas de tu motor diésel por OBD2: estado de la regeneración, hollín, temperatura y más, en tiempo real. Control del FAP para motores Renault/Dacia/Nissan/Mercedes 1.5 dCi/CDI y Mercedes 2.1 CDI; datos del motor y códigos de avería gratis para cualquier coche OBD2.">
 <meta property="og:title" content="DPF Guard">
 <meta property="og:description" content="Controla el filtro de partículas y la regeneración de tu diésel, en tiempo real.">
 <meta property="og:image" content="/assets/feature_graphic_en.png">
@@ -48,14 +48,13 @@
       Controla el filtro de partículas (FAP/DPF) de tu motor diésel y su
       regeneración, en tiempo real, desde el móvil.
     </p>
-    <p class="notice"><strong>Control del FAP: motores 1.5 dCi / CDI (K9K) y Mercedes 2.1 CDI (OM651)</strong><span>1.5 dCi / CDI (K9K): Dacia Duster, Sandero, Logan · Renault Clio, Mégane, Kangoo · Renault Captur · Nissan Micra, Note, Qashqai, Juke · Mercedes Clase A, B, CLA, GLA 180 CDI, Citan — versiones diésel con FAP</span><span>Mercedes 2.1 CDI (OM651): GLC 220d/250d · Clase C y E 200-250 CDI/BlueTEC/d · GLK · ML 250 · CLS · SLK · Clase A, B, CLA, GLA 200-220 CDI/d · Vito, Viano, Clase V, Sprinter · Infiniti Q50 y Q30 2.2d · Jeep Compass y Patriot 2.2 CRD. Probado en un GLC 250d de 2016: regeneración reconocida de principio a fin.</span><span>Datos del motor, códigos de avería y Agenda de mantenimiento: <b>gratis para cualquier coche</b>.</span><span>¿Tu motor aún no está? <a href="#tester">Hazte tester</a>.</span></p>
+    <p class="notice"><strong>Antes de instalar: lo que necesitas</strong><span>1. Un <b>adaptador OBD2 Bluetooth</b>: un pequeño conector que se enchufa en la toma del coche, normalmente debajo del volante. Sin él la app no puede leer el coche (solo funciona la Agenda).</span><span>2. Para el FAP, uno de estos motores diésel (si tienes dudas, mira la cilindrada en el permiso de circulación, campo P.1):</span><span><b>1.5 dCi (1461 cm³)</b>: Dacia Duster, Sandero, Logan · Renault Clio, Mégane, Kangoo, Captur · Nissan Micra, Note, Qashqai, Juke · Mercedes Clase A, B, CLA, GLA 180 CDI/d solo con el 1.5, Citan</span><span><b>Mercedes 2.1 CDI (2143 cm³)</b>: GLC 220d/250d · Clase C y E 200-250 CDI/BlueTEC/d · GLK · ML 250 · CLS · SLK · Clase A, B, CLA, GLA 200-220 CDI/d solo con el 2.1 · Vito, Viano, Clase V, Sprinter · Infiniti Q50 y Q30 2.2d · Jeep Compass y Patriot 2.2 CRD. Probada en un GLC 250d de 2016. El Mercedes 1.8 CDI todavía no funciona.</span><span>3. Un coche de 2008 o más reciente.</span><span>Datos del motor, códigos de avería y Agenda: <b>gratis en cualquier coche compatible</b>. ¿Tu motor aún no está? <a href="#tester">Hazte tester</a>.</span></p>
     <div class="btn-row">
       <a class="play-badge" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
         <img src="/assets/google-play-badge-es.png" alt="Disponible en Google Play">
       </a>
       <a class="btn ghost" href="#parameters">Ver los parámetros</a>
     </div>
-    <p class="ios-note" style="margin: 14px auto 0; font-size: 14px; color: var(--text-2); max-width: 560px">¿Tienes iPhone? De momento DPF Guard es solo para Android. <a href="mailto:support@dpfguard.it?subject=iPhone&amp;body=Me%20gustar%C3%ADa%20DPF%20Guard%20en%20iPhone.%0AModelo%20de%20iPhone%3A%0ACoche%3A%0AAdaptador%20OBD2%20%28si%20tienes%29%3A%0A">Escríbenos</a>: si sois muchos, llegará una versión para iOS.</p>
   </div>
 </section>
 
@@ -211,12 +210,12 @@
       <div class="step">
         <div class="num">1</div>
         <h3>Conecta el adaptador</h3>
-        <p>Enchufa un adaptador OBD2 compatible en la toma de diagnóstico del coche y vincúlalo por Bluetooth.</p>
+        <p>Enchufa el adaptador en la toma de debajo del volante y, la primera vez, vincúlalo al móvil por Bluetooth.</p>
       </div>
       <div class="step">
         <div class="num">2</div>
         <h3>Abre la app</h3>
-        <p>DPF Guard se conecta solo al último dongle usado y lee los datos directamente de la centralita del motor, sin equipos de taller.</p>
+        <p>DPF Guard se reconecta solo al último adaptador y lee los datos directamente del coche, sin herramientas de taller.</p>
       </div>
       <div class="step">
         <div class="num">3</div>
@@ -231,19 +230,15 @@
   <div class="wrap">
     <div class="compat-grid">
       <div class="compat">
-        <h3>Adaptadores compatibles</h3>
+        <h3>Qué adaptador</h3>
         <p>
-          Pensada para adaptadores OBD2 Bluetooth con chip
-          <strong>ELM327</strong>, tanto Bluetooth Low Energy (BLE) como
-          Bluetooth Classic. Probada y confirmada con el
-          <strong>vLinker/Vgate iCar2</strong>; otros adaptadores ELM327
-          también deberían funcionar, con alguna diferencia según el modelo.
+          Necesitas un adaptador OBD2 Bluetooth, de los que se venden en internet (sigla <strong>ELM327</strong>). Probada con <strong>vLinker</strong> y <strong>Vgate iCar</strong>; los demás suelen funcionar, pero algunos modelos baratos son menos fiables.
         </p>
       </div>
       <div class="compat">
         <h3>Motores compatibles</h3>
         <p>
-          El control del FAP admite motores <strong>Renault / Dacia / Nissan / Mercedes 1.5 dCi / CDI (K9K)</strong> con filtro de partículas, confirmado en Dacia Duster y Mercedes A 180 CDI, y motores <strong>Mercedes 2.1 CDI (OM651)</strong>, probado en un GLC 250d de 2016. Comprueba tu coche con la prueba gratuita antes de comprar. Necesita un vehículo con bus CAN; la compatibilidad con otros motores diésel está en desarrollo.
+          El control del FAP funciona en los <strong>1.5 dCi</strong> (Renault, Dacia, Nissan y Mercedes 180 con el 1.5), probado en Dacia Duster y Mercedes A 180 CDI, y en los <strong>Mercedes 2.1 CDI</strong>, probado en un GLC 250d de 2016. Necesitas un coche de 2008 o más reciente: si ves datos en la pestaña Motor de la app, tu coche funciona. El FAP también lo pruebas gratis antes de comprar. Llegarán más motores diésel.
         </p>
       </div>
     </div>
@@ -253,7 +248,7 @@
 <section id="tester">
   <div class="wrap">
     <h2>¿Tu motor aún no es compatible? Hazte tester</h2>
-    <p class="lead">Añadimos motores diésel nuevos con la ayuda de quien los conduce. Ya trabajamos en Peugeot/Citroën 1.6 HDi/BlueHDi y 2.0 HDi, Renault 1.6 dCi (R9M) y Fiat 1.3 MultiJet.</p>
+    <p class="lead">Añadimos motores diésel nuevos con la ayuda de quien los conduce. Ya trabajamos en Peugeot/Citroën 1.6 HDi/BlueHDi y 2.0 HDi, Renault 1.6 dCi y Fiat 1.3 MultiJet.</p>
     <p class="lead">Te enviamos una versión de prueba: haz algunos trayectos con tu adaptador OBD2 y mándanos los datos, que la app exporta sin información personal. Escríbenos indicando coche, año, motor y adaptador. O busca tu coche en la app y toca «Avísame cuando llegue mi coche».</p>
     <div class="btn-row">
       <a class="btn primary" href="mailto:support@dpfguard.it?subject=Quiero%20ser%20tester&amp;body=Coche%3A%0AA%C3%B1o%3A%0AMotor%20%28si%20lo%20sabes%29%3A%0AAdaptador%20OBD2%3A%0A">Hazte tester</a>

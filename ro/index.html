@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DPF Guard — Monitorizare DPF în timp real</title>
-<meta name="description" content="DPF Guard monitorizează filtrul de particule al motorului tău diesel prin OBD2: starea regenerării, funinginea, temperatura și altele, în timp real. Monitorizare DPF pentru motoare Renault/Dacia/Nissan/Mercedes 1.5 dCi/CDI (K9K) și Mercedes 2.1 CDI (OM651); date motor și coduri de eroare gratuite pentru orice mașină OBD2.">
+<meta name="description" content="DPF Guard monitorizează filtrul de particule al motorului tău diesel prin OBD2: starea regenerării, funinginea, temperatura și altele, în timp real. Monitorizare DPF pentru motoare Renault/Dacia/Nissan/Mercedes 1.5 dCi/CDI și Mercedes 2.1 CDI; date motor și coduri de eroare gratuite pentru orice mașină OBD2.">
 <meta property="og:title" content="DPF Guard">
 <meta property="og:description" content="Monitorizează filtrul de particule și regenerarea mașinii tale diesel, în timp real.">
 <meta property="og:image" content="/assets/feature_graphic_en.png">
@@ -48,14 +48,13 @@
       Monitorizează filtrul de particule (DPF/FAP) al motorului tău diesel
       și regenerarea lui, în timp real, direct de pe telefon.
     </p>
-    <p class="notice"><strong>Monitorizare DPF: motoare 1.5 dCi / CDI (K9K) și Mercedes 2.1 CDI (OM651)</strong><span>1.5 dCi / CDI (K9K): Dacia Duster, Sandero, Logan, Dokker, Lodgy · Renault Clio, Mégane, Kangoo · Renault Captur · Nissan Micra, Note, Qashqai, Juke · Mercedes Clasa A, B, CLA, GLA 180 CDI, Citan — versiuni diesel cu filtru de particule</span><span>Mercedes 2.1 CDI (OM651): GLC 220d/250d · Clasa C și E 200-250 CDI/BlueTEC/d · GLK · ML 250 · CLS · SLK · Clasa A, B, CLA, GLA 200-220 CDI/d · Vito, Viano, Clasa V, Sprinter · Infiniti Q50 și Q30 2.2d · Jeep Compass și Patriot 2.2 CRD. Testat pe un GLC 250d din 2016: regenerare recunoscută de la început la sfârșit.</span><span>Date motor, coduri de eroare și Agenda de revizii: <b>gratuite pentru orice mașină</b>.</span><span>Motorul tău nu este încă pe listă? <a href="#tester">Devino tester</a>.</span></p>
+    <p class="notice"><strong>Înainte de instalare: de ce ai nevoie</strong><span>1. Un <b>adaptor OBD2 Bluetooth</b>: o mufă mică ce se introduce în priza mașinii, de obicei sub volan. Fără el aplicația nu poate citi mașina (funcționează doar Agenda).</span><span>2. Pentru DPF, unul dintre aceste motoare diesel (dacă nu ești sigur, uită-te la capacitatea cilindrică în certificatul de înmatriculare, rubrica P.1):</span><span><b>1.5 dCi (1461 cm³)</b>: Dacia Duster, Sandero, Logan, Dokker, Lodgy · Renault Clio, Mégane, Kangoo, Captur · Nissan Micra, Note, Qashqai, Juke · Mercedes Clasa A, B, CLA, GLA 180 CDI/d doar cu motorul 1.5, Citan</span><span><b>Mercedes 2.1 CDI (2143 cm³)</b>: GLC 220d/250d · Clasa C și E 200-250 CDI/BlueTEC/d · GLK · ML 250 · CLS · SLK · Clasa A, B, CLA, GLA 200-220 CDI/d doar cu motorul 2.1 · Vito, Viano, Clasa V, Sprinter · Infiniti Q50 și Q30 2.2d · Jeep Compass și Patriot 2.2 CRD. Testată pe un GLC 250d din 2016. Mercedes 1.8 CDI încă nu funcționează.</span><span>3. O mașină din 2008 sau mai nouă.</span><span>Date motor, coduri de eroare și Agenda: <b>gratuit pe orice mașină compatibilă</b>. Motorul tău nu e încă aici? <a href="#tester">Devino tester</a>.</span></p>
     <div class="btn-row">
       <a class="play-badge" href="https://play.google.com/store/apps/details?id=it.dpfguard.app">
         <img src="/assets/google-play-badge-ro.png" alt="Descarcă de pe Google Play">
       </a>
       <a class="btn ghost" href="#parameters">Vezi parametrii</a>
     </div>
-    <p class="ios-note" style="margin: 14px auto 0; font-size: 14px; color: var(--text-2); max-width: 560px">Ai iPhone? Deocamdată DPF Guard este doar pentru Android. <a href="mailto:support@dpfguard.it?subject=iPhone&amp;body=A%C8%99%20vrea%20DPF%20Guard%20pe%20iPhone.%0AModel%20iPhone%3A%0AMa%C8%99ina%3A%0AAdaptor%20OBD2%20%28dac%C4%83%20ai%29%3A%0A">Scrie-ne</a>: dacă sunteți mulți, va urma o versiune iOS.</p>
   </div>
 </section>
 
@@ -211,12 +210,12 @@
       <div class="step">
         <div class="num">1</div>
         <h3>Conectează adaptorul</h3>
-        <p>Pune un adaptor OBD2 compatibil în priza de diagnoză a mașinii și conectează-l prin Bluetooth.</p>
+        <p>Introdu adaptorul în priza de sub volan și, prima dată, împerechează-l cu telefonul prin Bluetooth.</p>
       </div>
       <div class="step">
         <div class="num">2</div>
         <h3>Deschide aplicația</h3>
-        <p>DPF Guard se conectează singur la ultimul dongle folosit și citește datele direct din calculatorul motorului, fără echipamente de service.</p>
+        <p>DPF Guard se reconectează singur la ultimul adaptor și citește datele direct din mașină, fără unelte de service.</p>
       </div>
       <div class="step">
         <div class="num">3</div>
@@ -231,19 +230,15 @@
   <div class="wrap">
     <div class="compat-grid">
       <div class="compat">
-        <h3>Adaptoare compatibile</h3>
+        <h3>Ce adaptor</h3>
         <p>
-          Gândită pentru adaptoare OBD2 Bluetooth cu cip
-          <strong>ELM327</strong>, atât Bluetooth Low Energy (BLE), cât și
-          Bluetooth Classic. Testată și confirmată cu
-          <strong>vLinker/Vgate iCar2</strong>; și alte adaptoare ELM327 ar
-          trebui să meargă, cu mici diferențe de la model la model.
+          Ai nevoie de un adaptor OBD2 Bluetooth, din cele vândute online (cu indicația <strong>ELM327</strong>). Testată cu <strong>vLinker</strong> și <strong>Vgate iCar</strong>; celelalte merg de obicei, dar unele modele ieftine sunt mai puțin fiabile.
         </p>
       </div>
       <div class="compat">
         <h3>Motoare compatibile</h3>
         <p>
-          Monitorizarea DPF acceptă motoare <strong>Renault / Dacia / Nissan / Mercedes 1.5 dCi / CDI (K9K)</strong> cu filtru de particule, confirmată pe Dacia Duster și Mercedes A 180 CDI, și motoare <strong>Mercedes 2.1 CDI (OM651)</strong>, testată pe un GLC 250d din 2016. Verifică mașina cu proba gratuită înainte de cumpărare. Necesită o mașină cu magistrală CAN; alte motoare diesel sunt în lucru.
+          Monitorizarea DPF funcționează pe <strong>1.5 dCi</strong> (Renault, Dacia, Nissan și Mercedes 180 cu motorul 1.5), testată pe Dacia Duster și Mercedes A 180 CDI, și pe <strong>Mercedes 2.1 CDI</strong>, testată pe un GLC 250d din 2016. Ai nevoie de o mașină din 2008 sau mai nouă: dacă vezi date în fila Motor a aplicației, mașina ta merge. Și DPF-ul îl încerci gratuit înainte de cumpărare. Vin și alte motoare diesel.
         </p>
       </div>
     </div>
@@ -253,7 +248,7 @@
 <section id="tester">
   <div class="wrap">
     <h2>Motorul tău nu este încă acceptat? Devino tester</h2>
-    <p class="lead">Adăugăm motoare diesel noi cu ajutorul celor care le conduc. Lucrăm deja la Peugeot/Citroën 1.6 HDi/BlueHDi și 2.0 HDi, Renault 1.6 dCi (R9M) și Fiat 1.3 MultiJet.</p>
+    <p class="lead">Adăugăm motoare diesel noi cu ajutorul celor care le conduc. Lucrăm deja la Peugeot/Citroën 1.6 HDi/BlueHDi și 2.0 HDi, Renault 1.6 dCi și Fiat 1.3 MultiJet.</p>
     <p class="lead">Îți trimitem o versiune de test: fă câteva drumuri cu adaptorul OBD2 și trimite-ne datele, pe care aplicația le exportă fără informații personale. Scrie-ne mașina, anul, motorul și adaptorul. Sau caută-ți mașina în aplicație și atinge „Anunță-mă când este acceptată mașina mea”.</p>
     <div class="btn-row">
       <a class="btn primary" href="mailto:support@dpfguard.it?subject=Vreau%20s%C4%83%20fiu%20tester&amp;body=Ma%C8%99ina%3A%0AAnul%3A%0AMotorul%20%28dac%C4%83%20%C3%AEl%20%C8%99tii%29%3A%0AAdaptor%20OBD2%3A%0A">Devino tester</a>

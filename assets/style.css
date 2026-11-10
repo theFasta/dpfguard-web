@@ -126,7 +126,7 @@ header.site .wrap {
   font-size: 14.5px;
   margin-bottom: 6px;
 }
-.hero p.notice span { display: block; }
+.hero p.notice span { display: block; text-align: left; margin-top: 4px; }
 
 .play-badge { display: inline-block; line-height: 0; }
 .play-badge img { height: 54px; width: auto; }
