@@ -31,7 +31,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Datenschutzerklärung</h1>
-    <p class="updated">Zuletzt aktualisiert: 15. November 2026 (Version 1.16.0)</p>
+    <p class="updated">Zuletzt aktualisiert: 15. November 2026 (Version 1.17.0)</p>
 
     <p>
       DPF Guard („die App“) ist eine Android-Anwendung, die über einen
@@ -45,7 +45,7 @@
 
     <h2>1. Welche Daten wir erheben</h2>
     <p>
-      Die App erhebt keine personenbezogenen Daten. Nichts von dem, was sie liest oder speichert, wird an uns oder einen Server von uns gesendet, außer du entscheidest dich, es uns zu schicken: per E-Mail (siehe „Motorscans, die du uns schicken möchtest“) oder mit dem freiwilligen Formular „Welches Auto fährst du?“ (siehe unten). Im Einzelnen:
+      Die App erhebt keine personenbezogenen Daten. Nichts von dem, was sie liest oder speichert, wird an uns oder einen Server von uns gesendet, außer du entscheidest dich, es uns zu schicken: per E-Mail (siehe „Motorscans, die du uns schicken möchtest“) oder mit dem freiwilligen Formular „Welches Auto fährst du?“ (siehe unten), oder indem du die Daten deiner Regenerationen anonym teilst, wenn du das einschaltest. Im Einzelnen:
     </p>
     <ul>
       <li>
@@ -116,12 +116,15 @@
       <li>
         <strong>„Welches Auto fährst du?“ (freiwillig)</strong>: Die App fragt dich einmal, ob du uns dein Auto, dein Land und deine Stadt nennen möchtest. Du kannst antworten, es verschieben oder ablehnen und deine Antwort unter Info ändern. Wenn du antwortest, senden wir: Marke und Modell, Baujahr, Land und Stadt so, wie du sie schreibst, den in der App gewählten Motor, Sprache und Land des Telefons, die App-Version und einen von der App erzeugten Zufallscode (er dient nur dazu, deine Antwort zu ersetzen, wenn du sie änderst, statt sie doppelt zu zählen; er ist weder mit dem Telefon noch mit dir verknüpft). Wir senden keinen Namen, keine E-Mail, kein Kennzeichen, keine Fahrgestellnummer, keine GPS-Position und keine Kennung des Telefons. Die Antworten landen über Google Apps Script in einer privaten Google-Tabelle unseres Kontos; wir nutzen sie nur für interne Statistiken (mit welchen Autos und in welchen Ländern die App genutzt wird) und geben sie an niemanden weiter. Ist dein Handy auf eine Sprache eingestellt, in die die App nicht übersetzt ist, kannst du uns im selben Formular (oder unter Info) auch sagen, ob du die App in dieser Sprache möchtest und ob du helfen kannst, die Übersetzung zu prüfen: Wir senden diese zwei Antworten mit Sprache und Land des Handys, der App-Version und demselben Zufallscode. Wenn du bei der Übersetzung helfen willst, schlägt dir die App vor, uns eine E-Mail zu schreiben: Du schickst sie selbst, nur wenn du willst.
       </li>
+      <li>
+        <strong>Daten der Regenerationen (freiwillig, aus, bis du es einschaltest)</strong>: Nach der ersten Regeneration, die die App aufzeichnet, fragt sie dich einmal, ob du die Daten deiner Regenerationen anonym teilen möchtest. Nichts wird gesendet, wenn du nicht auf "Teilen" tippst, und du kannst jederzeit unter Einstellungen → "Anonyme Daten" aufhören. Wenn du es einschaltest, senden wir für jede Regeneration (auch die bereits gespeicherten): den in der App gewählten Motor, Tag und Stunde des Beginns, die Dauer, den Ruß vorher und nachher, die km seit der vorherigen, ob sie beendet oder unterbrochen wurde, die App-Version, die auf dem Handy eingestellte Sprache und das Land sowie denselben Zufallscode wie bei "Welches Auto fährst du?" (er hält die Regenerationen desselben Handys zusammen; er ist weder mit dem Handy noch mit dir verknüpft). Wir senden keinen Namen, keine E-Mail, kein Kennzeichen, keine Fahrgestellnummer (VIN), keine GPS-Position und keine Kennungen des Handys. Die Daten gehen über Google Apps Script in eine private Google-Tabelle unseres Kontos, und wir nutzen sie nur, um die App zu verbessern und auf jeden Motor abzustimmen (zum Beispiel, bei welcher Rußmenge ein Motor regeneriert und wie oft); wir verkaufen sie nicht und geben sie an niemanden weiter.
+      </li>
     </ul>
 
     <h2>2. Welche Daten wir nicht erheben</h2>
     <ul>
       <li>Keine Benutzerkonten oder Registrierung</li>
-      <li>Keine Analyse- oder Absturzberichtsdienste von Drittanbietern (die einzigen Statistiken sind die freiwilligen Antworten auf „Welches Auto fährst du?“)</li>
+      <li>Keine Analyse- oder Absturzberichtsdienste von Drittanbietern (die einzigen Statistiken sind die freiwilligen Antworten auf „Welches Auto fährst du?“ und die Daten der Regenerationen, die du teilen möchtest)</li>
       <li>Keine Werbe-SDKs</li>
       <li>
         Keine Standortdaten (bis Android 11 verlangt das Betriebssystem die
@@ -171,7 +174,7 @@
         anzubieten.
       </li>
       <li>
-        <strong>INTERNET</strong>: für Käufe und Updates über Google Play und, nur wenn du antwortest, um „Welches Auto fährst du?“ zu senden.
+        <strong>INTERNET</strong>: für Käufe und Updates über Google Play und, nur wenn du antwortest, um „Welches Auto fährst du?“ zu senden und, nur wenn du es einschaltest, um die anonymen Daten der Regenerationen zu senden.
       </li>
     </ul>
 
@@ -185,7 +188,7 @@
       Die App enthält kein weiteres Drittanbieter-SDK, das Daten erhebt.
     </p>
     <p>
-      Die freiwilligen Antworten auf „Welches Auto fährst du?“ werden an ein eigenes Google-Apps-Script gesendet und in einer Google-Tabelle unseres Kontos gespeichert: Google bewahrt sie für uns gemäß seiner Datenschutzerklärung auf, und sonst hat niemand Zugriff darauf.
+      Die freiwilligen Antworten auf „Welches Auto fährst du?“ werden an ein eigenes Google-Apps-Script gesendet und in einer Google-Tabelle unseres Kontos gespeichert: Google bewahrt sie für uns gemäß seiner Datenschutzerklärung auf, und sonst hat niemand Zugriff darauf. Die Daten der Regenerationen, die du teilen möchtest, gehen denselben Weg, in eine eigene Tabelle.
     </p>
 
     <h2 id="data-deletion">5. Speicherdauer und Löschung</h2>
@@ -201,7 +204,7 @@
       → Daten löschen entfernst.
     </p>
     <p>
-      Die Antworten auf „Welches Auto fährst du?“ bleiben in unserer Tabelle, solange sie für die Statistik nützlich sind. Sie sind anonym, daher können wir sie dir nicht zuordnen; wenn du eine löschen lassen möchtest, schreib an <a href="mailto:support@dpfguard.it">support@dpfguard.it</a> mit Auto, Stadt und Tag des Sendens, und wir suchen sie.
+      Die Antworten auf „Welches Auto fährst du?“ bleiben in unserer Tabelle, solange sie für die Statistik nützlich sind. Sie sind anonym, daher können wir sie dir nicht zuordnen; wenn du eine löschen lassen möchtest, schreib an <a href="mailto:support@dpfguard.it">support@dpfguard.it</a> mit Auto, Stadt und Tag des Sendens, und wir suchen sie. Die Daten der Regenerationen bleiben dort, solange sie helfen, die App zu verbessern. Um sie löschen zu lassen, schreib uns den anonymen Code aus Einstellungen → "Anonyme Daten" (sichtbar, solange das Teilen eingeschaltet ist) und schalte das Teilen dann aus: Wir löschen alle Zeilen mit diesem Code.
     </p>
 
     <h2>6. Kinder</h2>

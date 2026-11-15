@@ -31,7 +31,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 15 November 2026 (version 1.16.0)</p>
+    <p class="updated">Last updated: 15 November 2026 (version 1.17.0)</p>
 
     <p>
       DPF Guard ("the App") is an Android application that reads live OBD2
@@ -44,7 +44,7 @@
 
     <h2>1. Data we collect</h2>
     <p>
-      The App does not collect personal data. Nothing it reads or stores is sent to us or to a server of ours, unless you decide to send it: by email (see "Engine scans you choose to send") or with the optional "What car do you drive?" form (see below). Specifically:
+      The App does not collect personal data. Nothing it reads or stores is sent to us or to a server of ours, unless you decide to send it: by email (see "Engine scans you choose to send") or with the optional "What car do you drive?" form (see below), or by sharing your regeneration data anonymously, if you turn it on. Specifically:
     </p>
     <ul>
       <li>
@@ -112,12 +112,15 @@
       <li>
         <strong>"What car do you drive?" (optional)</strong>: the App asks you, once, whether you want to tell us your car and your country and city. You can answer, postpone or say no, and change your answer from Info. If you answer, we send: make and model, year, country and city as you write them, the engine chosen in the App, the language and country set on the phone, the App version and a random code created by the App (only used to replace your answer if you change it, instead of counting it twice; it is not linked to the phone or to you). We do not send your name, email, number plate, chassis number (VIN), GPS position or any phone identifier. Answers go to a private Google Sheet in our account, through Google Apps Script; we use them only for internal statistics (which cars and countries the App is used in) and never share them with anyone. If your phone is in a language the App isn't translated into, in the same form (or from Info) you can also tell us whether you'd like the App in that language and whether you can help review the translation: we send these two answers with the phone's language and country, the App version and the same random code. If you want to help with the translation, the App offers to write us an email: you send it yourself, only if you want.
       </li>
+      <li>
+        <strong>Regeneration data (optional, off until you turn it on)</strong>: after the first regeneration the App records, it asks you once whether you want to share the data of your regenerations anonymously. Nothing is sent unless you tap "Share", and you can stop at any time in Settings → "Anonymous data". If you turn it on, for each regeneration (including those already saved) we send: the engine chosen in the App, the day and hour it started, how long it lasted, the soot before and after, the km since the previous one, whether it was completed or interrupted, the App version, the language and country set on the phone, and the same random code as "What car do you drive?" (it groups the regenerations of the same phone; it is not linked to the phone or to you). We do not send name, email, number plate, chassis number (VIN), GPS position or phone identifiers. The data goes to a private Google Sheet in our account through Google Apps Script, and we use it only to improve the App and fine-tune it for each engine (for example the soot level at which an engine regenerates and how often); we never sell it or give it to anyone.
+      </li>
     </ul>
 
     <h2>2. Data we do not collect</h2>
     <ul>
       <li>No user accounts or registration</li>
-      <li>No third-party analytics or crash reporting services (the only statistics are the optional answers to "What car do you drive?")</li>
+      <li>No third-party analytics or crash reporting services (the only statistics are the optional answers to "What car do you drive?" and the regeneration data you choose to share)</li>
       <li>No advertising SDKs</li>
       <li>
         No location data (on Android 11 and below the operating system
@@ -164,7 +167,7 @@
         Google Play.
       </li>
       <li>
-        <strong>INTERNET</strong>: for purchases and updates through Google Play and, only if you answer, to send "What car do you drive?".
+        <strong>INTERNET</strong>: for purchases and updates through Google Play and, only if you answer, to send "What car do you drive?" and, only if you turn it on, to send the anonymous regeneration data.
       </li>
     </ul>
 
@@ -179,7 +182,7 @@
       data.
     </p>
     <p>
-      The optional answers to "What car do you drive?" are sent to a Google Apps Script of ours and stored in a Google Sheet in our account: Google keeps them for us under its privacy policy, and nobody else has access to them.
+      The optional answers to "What car do you drive?" are sent to a Google Apps Script of ours and stored in a Google Sheet in our account: Google keeps them for us under its privacy policy, and nobody else has access to them. The regeneration data you choose to share goes the same way, to a separate sheet.
     </p>
 
     <h2 id="data-deletion">5. Data retention and deletion</h2>
@@ -193,7 +196,7 @@
       Android Settings → Apps → DPF Guard → Storage → Clear data.
     </p>
     <p>
-      Answers to "What car do you drive?" stay in our sheet as long as they are useful for statistics. They are anonymous, so we cannot link them to you; if you want one deleted, write to <a href="mailto:support@dpfguard.it">support@dpfguard.it</a> with the car, city and day you sent it and we will look for it.
+      Answers to "What car do you drive?" stay in our sheet as long as they are useful for statistics. They are anonymous, so we cannot link them to you; if you want one deleted, write to <a href="mailto:support@dpfguard.it">support@dpfguard.it</a> with the car, city and day you sent it and we will look for it. The regeneration data stays there as long as it helps to improve the App. To have it deleted, write to us with the anonymous code shown in Settings → "Anonymous data" (visible while sharing is on), then turn sharing off: we delete every row with that code.
     </p>
 
     <h2>6. Children's privacy</h2>

@@ -31,7 +31,7 @@
 <main class="legal">
   <div class="wrap">
     <h1>Politica de confidențialitate</h1>
-    <p class="updated">Ultima actualizare: 15 noiembrie 2026 (versiunea 1.16.0)</p>
+    <p class="updated">Ultima actualizare: 15 noiembrie 2026 (versiunea 1.17.0)</p>
 
     <p>
       DPF Guard („Aplicația”) este o aplicație Android care citește date
@@ -44,7 +44,7 @@
 
     <h2>1. Datele pe care le colectăm</h2>
     <p>
-      Aplicația nu colectează date personale. Nimic din ce citește sau salvează nu ne este trimis nouă sau unui server al nostru, decât dacă decizi tu să ni-l trimiți: prin email (vezi „Scanările motorului pe care alegi să le trimiți”) sau cu formularul opțional „Ce mașină ai?” (vezi mai jos). Concret:
+      Aplicația nu colectează date personale. Nimic din ce citește sau salvează nu ne este trimis nouă sau unui server al nostru, decât dacă decizi tu să ni-l trimiți: prin email (vezi „Scanările motorului pe care alegi să le trimiți”) sau cu formularul opțional „Ce mașină ai?” (vezi mai jos), sau trimițând anonim datele regenerărilor tale, dacă activezi asta. Concret:
     </p>
     <ul>
       <li>
@@ -112,12 +112,15 @@
       <li>
         <strong>„Ce mașină ai?” (opțional)</strong>: aplicația te întreabă, o singură dată, dacă vrei să ne spui ce mașină ai și în ce țară și oraș. Poți răspunde, amâna sau refuza și poți schimba răspunsul din Info. Dacă răspunzi, trimitem: marca și modelul, anul, țara și orașul așa cum le scrii, motorul ales în aplicație, limba și țara setate pe telefon, versiunea aplicației și un cod aleatoriu creat de aplicație (servește doar la înlocuirea răspunsului dacă îl schimbi, în loc să fie numărat de două ori; nu este legat de telefon sau de tine). Nu trimitem nume, email, număr de înmatriculare, serie de șasiu, poziție GPS sau identificatori ai telefonului. Răspunsurile ajung într-o foaie Google privată a contului nostru, prin Google Apps Script; le folosim doar pentru statistici interne (pe ce mașini și în ce țări este folosită aplicația) și nu le dezvăluim nimănui. Dacă telefonul tău e într-o limbă în care aplicația nu e tradusă, în același formular (sau din Info) ne poți spune și dacă ai vrea aplicația în acea limbă și dacă poți ajuta la verificarea traducerii: trimitem aceste două răspunsuri cu limba și țara telefonului, versiunea aplicației și același cod aleatoriu. Dacă vrei să ne ajuți cu traducerea, aplicația îți propune să ne scrii un email: îl trimiți tu, doar dacă vrei.
       </li>
+      <li>
+        <strong>Datele regenerărilor (opțional, oprit până îl activezi)</strong>: după prima regenerare înregistrată, aplicația te întreabă o singură dată dacă vrei să trimiți anonim datele regenerărilor tale. Nu se trimite nimic dacă nu atingi "Trimite", și te poți opri oricând din Setări → "Date anonime". Dacă îl activezi, pentru fiecare regenerare (inclusiv cele deja salvate) trimitem: motorul ales în aplicație, ziua și ora de început, durata, funinginea înainte și după, km de la regenerarea precedentă, dacă s-a terminat sau s-a întrerupt, versiunea aplicației, limba și țara setate pe telefon și același cod aleatoriu ca la "Ce mașină ai?" (ține împreună regenerările aceluiași telefon; nu este legat de telefon și nici de tine). Nu trimitem nume, e-mail, număr de înmatriculare, serie de șasiu (VIN), poziție GPS sau identificatori ai telefonului. Datele ajung într-o foaie Google privată a contului nostru, prin Google Apps Script, și le folosim doar ca să îmbunătățim aplicația și s-o reglăm pentru fiecare motor (de exemplu, la ce nivel de funingine regenerează un motor și cât de des); nu le vindem și nu le dăm nimănui.
+      </li>
     </ul>
 
     <h2>2. Datele pe care nu le colectăm</h2>
     <ul>
       <li>Niciun cont de utilizator și nicio înregistrare</li>
-      <li>Niciun serviciu terț de statistici sau de raportare a erorilor (singurele statistici sunt răspunsurile opționale la „Ce mașină ai?”)</li>
+      <li>Niciun serviciu terț de statistici sau de raportare a erorilor (singurele statistici sunt răspunsurile opționale la „Ce mașină ai?” și datele regenerărilor pe care alegi să le trimiți)</li>
       <li>Niciun SDK de publicitate</li>
       <li>
         Nicio dată de localizare (pe Android 11 și versiunile anterioare,
@@ -166,7 +169,7 @@
         Google Play.
       </li>
       <li>
-        <strong>INTERNET</strong>: pentru achiziții și actualizări prin Google Play și, doar dacă răspunzi, pentru a trimite „Ce mașină ai?”.
+        <strong>INTERNET</strong>: pentru achiziții și actualizări prin Google Play și, doar dacă răspunzi, pentru a trimite „Ce mașină ai?” și, doar dacă îl activezi, pentru a trimite datele anonime ale regenerărilor.
       </li>
     </ul>
 
@@ -180,7 +183,7 @@
       Aplicația nu integrează niciun alt SDK terț care colectează date.
     </p>
     <p>
-      Răspunsurile opționale la „Ce mașină ai?” sunt trimise unui script Google Apps Script al nostru și salvate într-o foaie Google a contului nostru: Google le păstrează pentru noi conform politicii sale de confidențialitate și nimeni altcineva nu are acces la ele.
+      Răspunsurile opționale la „Ce mașină ai?” sunt trimise unui script Google Apps Script al nostru și salvate într-o foaie Google a contului nostru: Google le păstrează pentru noi conform politicii sale de confidențialitate și nimeni altcineva nu are acces la ele. Datele regenerărilor pe care alegi să le trimiți urmează același drum, într-o foaie separată.
     </p>
 
     <h2 id="data-deletion">5. Păstrarea și ștergerea datelor</h2>
@@ -195,7 +198,7 @@
       Stocare → Șterge datele.
     </p>
     <p>
-      Răspunsurile la „Ce mașină ai?” rămân în foaia noastră cât timp sunt utile pentru statistici. Sunt anonime, deci nu le putem lega de tine; dacă vrei să ștergem unul, scrie-ne la <a href="mailto:support@dpfguard.it">support@dpfguard.it</a> cu mașina, orașul și ziua trimiterii și îl căutăm.
+      Răspunsurile la „Ce mașină ai?” rămân în foaia noastră cât timp sunt utile pentru statistici. Sunt anonime, deci nu le putem lega de tine; dacă vrei să ștergem unul, scrie-ne la <a href="mailto:support@dpfguard.it">support@dpfguard.it</a> cu mașina, orașul și ziua trimiterii și îl căutăm. Datele regenerărilor rămân acolo cât timp ajută la îmbunătățirea aplicației. Ca să le ștergem, trimite-ne codul anonim din Setări → "Date anonime" (vizibil cât timp trimiterea este activă), apoi oprește trimiterea: ștergem toate rândurile cu acel cod.
     </p>
 
     <h2>6. Confidențialitatea copiilor</h2>
