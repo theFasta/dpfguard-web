@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DPF Guard — Anleitung für Tester</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .legal ol.todo { padding-left: 22px; }
+  .legal ol.todo li { margin: 6px 0; }
+  .shot { display: flex; gap: 24px; align-items: flex-start; margin: 18px 0 28px; flex-wrap: wrap; }
+  .shot img { width: 260px; border-radius: 14px; border: 1px solid var(--surface-2); }
+  .shot .txt { flex: 1 1 260px; min-width: 0; }
+  .shot img { max-width: 100%; }
+  .legal { overflow-wrap: anywhere; }
+  .note { background: var(--surface); border-left: 4px solid #ffd400; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/icon.png" alt="">
+      DPF Guard
+    </a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <h1>Anleitung für Tester</h1>
+    <p class="updated">Letzte Aktualisierung: 19. November 2026 (Version 1.19.1+156)</p>
+
+    <p>
+      Danke, dass du uns hilfst! Mit der Testversion von DPF Guard zeichnest
+      du auf, was das Motorsteuergerät deines Autos während der Fahrt sagt.
+      Aus diesen Daten finden wir heraus, wo dein Motor die Werte des
+      Partikelfilters speichert (Ruß, Regeneration, km), damit die App sie
+      anzeigen kann.
+    </p>
+
+    <div class="note">
+      Kurz gesagt: <strong>Motor wählen</strong>, <strong>einmal den
+      vollständigen Scan</strong> bis "Fertig!" laufen lassen, dann
+      <strong>bei jeder Fahrt die Probe öffnen</strong> und uns die Fahrten
+      aus "Gespeicherte Fahrten" schicken. Alles andere läuft von selbst.
+      <br><strong>Wenn dein Auto nicht in der Motorliste steht</strong>,
+      beginne mit Schritt 6: ein Test von einer Minute.
+    </div>
+
+    <p>Diese Übersetzung ist nicht von Muttersprachlern geprüft.</p>
+
+    <h2>Bevor du anfängst</h2>
+    <ol class="todo">
+      <li>Tritt dem Test bei: Öffne diesen Link <strong>in Chrome</strong>
+        (nicht in der Play-Store-App), mit demselben Google-Konto wie auf
+        dem Handy, und tippe auf die Schaltfläche, um Tester zu werden:<br>
+        <a href="https://play.google.com/apps/internaltest/4701533325119832120">https://play.google.com/apps/internaltest/4701533325119832120</a></li>
+      <li>Aktualisiere DPF Guard im Play Store. Testversionen erscheinen
+        manchmal erst ein paar Stunden später.</li>
+      <li>Prüfe die Version: Tippe in DPF Guard oben rechts auf das
+        <strong>i</strong>. Dort muss <strong>1.19.1+156</strong> oder eine
+        höhere Zahl stehen.</li>
+      <li>Wenn die App die Karte <strong>"Warnungen mit dem Handy in der
+        Tasche"</strong> zeigt, tippe auf <strong>"Öffnen"</strong>, dann
+        auf den Eintrag zum Akku, und hebe die Einschränkungen auf. So
+        zeichnet die App auch bei ausgeschaltetem Bildschirm und während
+        Pausen auf.</li>
+    </ol>
+
+    <h2>1. Motor wählen</h2>
+    <div class="shot">
+      <img src="/assets/tester/de/1_cambia_motore.jpg" alt="Symbol Motor wechseln oben links">
+      <div class="txt">
+        <p>Bevor du dich mit dem Adapter verbindest, tippe oben links auf
+          das Symbol und wähle den Motor, den wir dir für dein Auto genannt
+          haben.</p>
+        <p><strong>Wenn du mehrere Autos fährst</strong>, wechsle den Motor
+          jedes Mal, wenn du das Auto wechselst: Das ist der häufigste
+          Fehler.</p>
+      </div>
+    </div>
+
+    <h2>2. Verbinden und die Probe öffnen</h2>
+    <div class="shot">
+      <img src="/assets/tester/de/2_probe.jpg" alt="Symbol der Probe oben rechts im DPF-Bildschirm">
+      <div class="txt">
+        <p>Tippe bei laufendem Motor auf <strong>"Geräte suchen"</strong>
+          und wähle deinen Adapter. Wenn du verbunden bist, tippe oben rechts
+          auf das Symbol der <strong>Probe</strong>.</p>
+        <p>Wenn dein Motor noch nicht unterstützt wird, bleibt der
+          DPF-Bildschirm leer oder zeigt nur wenige Werte: Das ist normal,
+          du machst nichts falsch. Die Werte entstehen genau aus den Fahrten,
+          die du uns schickst. (Das Bild daneben stammt von einem Motor, der
+          schon unterstützt wird.)</p>
+      </div>
+    </div>
+
+    <h2>3. Der vollständige Scan, nur einmal</h2>
+    <div class="shot">
+      <img src="/assets/tester/de/3_scansione_e_giri.jpg" alt="In der Probe: Symbol des vollständigen Scans und Gespeicherte Fahrten">
+      <div class="txt">
+        <p>Tippe in der Probe auf das Symbol <strong>Lupe mit
+          Linien</strong>, dann auf <strong>"Starten"</strong>. Der Scan
+          probiert alle Adressen des Motorsteuergeräts: von wenigen Minuten
+          bis über eine Stunde, je nach Auto (die App zeigt, wie lange es
+          noch dauert). Nur Lesen, es wird nichts verändert.</p>
+        <ul>
+          <li><strong>Du kannst ihn während einer normalen Fahrt
+            machen</strong>: Du musst nicht stehen bleiben.</li>
+          <li><strong>Er muss nicht in einem Stück laufen</strong>: Wenn du
+            den Motor ausschaltest oder die Probe verlässt, macht er beim
+            nächsten Mal von selbst dort weiter, wo er aufgehört hat.</li>
+          <li>Während er läuft, tippe nicht auf die anderen Symbole der
+            Probe.</li>
+          <li>Wenn <strong>"Fertig!"</strong> erscheint, brauchst du ihn
+            nicht mehr: Schick uns diese Fahrt (Schritt 5).</li>
+        </ul>
+        <p>Wenn wir dir gesagt haben, dass der Scan für dein Auto schon
+          gemacht ist, überspringe diesen Schritt.</p>
+      </div>
+    </div>
+
+    <h2>4. Bei jeder Fahrt</h2>
+    <ol class="todo">
+      <li>Vor dem Losfahren: mit dem Adapter verbinden und die Probe
+        öffnen.</li>
+      <li>Fahr ganz normal, ohne das Handy anzufassen: Die Probe zeichnet
+        von selbst auf und speichert die Fahrt jede Minute und beim
+        Verlassen.</li>
+      <li>Das Handy kann in der Tasche bleiben, mit ausgeschaltetem
+        Bildschirm. Wenn du Pausen machst, lass die App offen: Sie macht
+        beim Weiterfahren von selbst weiter.</li>
+      <li>Wenn du merkst, dass eine <strong>Regeneration</strong> läuft
+        (Lüfter läuft nach, höhere Leerlaufdrehzahl, Brandgeruch) und du
+        sicher stehst, kannst du auf <strong>"Segna evento"</strong> tippen
+        ("Ereignis markieren", die Schaltfläche unten rechts, noch auf
+        Italienisch). Das ist keine Pflicht: Die Fahrt hilft uns
+        trotzdem.</li>
+    </ol>
+
+    <h2>5. Uns die Daten schicken</h2>
+    <p>
+      Tippe in der Probe auf <strong>"Gespeicherte Fahrten"</strong> (es gibt
+      auch das <strong>Ordner</strong>-Symbol auf dem Startbildschirm: dafür
+      musst du nicht verbunden sein), dann bei der gewünschten Fahrt auf
+      <strong>"Senden"</strong> (oder <strong>"Alle senden"</strong>). Die
+      Datei geht per E-Mail, WhatsApp oder wie du möchtest.
+    </p>
+    <p>Du musst nicht jede Fahrt schicken. Wir brauchen vor allem:</p>
+    <ul>
+      <li>die Fahrt, in der der vollständige Scan "Fertig!" zeigt;</li>
+      <li>die Fahrten, in denen eine Regeneration lief;</li>
+      <li>die Fahrten, um die wir dich per E-Mail bitten.</li>
+    </ul>
+
+    <h2>6. Wenn dein Auto nicht in der Liste steht: Test neuer Motor</h2>
+    <div class="shot">
+      <img src="/assets/tester/de/4_prova_nuovo_motore.jpg" alt="Mit Anderer Motor: Reagenzglas-Symbol oben rechts">
+      <div class="txt">
+        <p>Wenn du dein Auto nicht in der Motorliste findest, sagt uns ein
+          Test von etwa einer Minute, ob wir daran arbeiten können. Im Auto,
+          bei laufendem Motor:</p>
+        <ol class="todo">
+          <li>Tippe oben links auf das Symbol (die Striche).</li>
+          <li>Schreibe oben in die Suche <strong>Anderer</strong> und tippe
+            auf <strong>"Anderer Motor"</strong>, dann auf
+            <strong>"Weiter"</strong>.</li>
+          <li>Tippe auf <strong>"Geräte suchen"</strong> und auf deinen
+            Adapter.</li>
+          <li>Wenn Zahlen erscheinen, tippe oben rechts auf das
+            <strong>Reagenzglas</strong>.</li>
+          <li>Tippe auf <strong>"Test starten"</strong> und zieh den Adapter
+            nicht ab.</li>
+          <li>Wenn <strong>"Fertig!"</strong> erscheint, tippe auf
+            <strong>"Senden"</strong> und schick die Datei an
+            <a href="mailto:info@dpfguard.it">info@dpfguard.it</a>.</li>
+        </ol>
+        <p>Wenn oben rechts kein Reagenzglas zu sehen ist, ist die
+          Testversion noch nicht angekommen: Versuch es in ein paar Stunden
+          noch einmal.</p>
+      </div>
+    </div>
+
+    <h2>7. Wenn der Test vorbei ist</h2>
+    <p>Wir schreiben dir, wenn dein Motor in der öffentlichen Version ist. Dann:</p>
+    <ol class="todo">
+      <li>Öffne diesen Link und tippe auf die Schaltfläche, um das Programm
+        zu verlassen:<br>
+        <a href="https://play.google.com/apps/internaltest/4701533325119832120">https://play.google.com/apps/internaltest/4701533325119832120</a></li>
+      <li>Du musst DPF Guard nicht deinstallieren: Du kannst die App so
+        weiter benutzen. Mit der nächsten öffentlichen Version aktualisiert
+        der Play Store sie von selbst.</li>
+      <li>Wenn du die öffentliche Version sofort willst: Schick uns zuerst
+        die Fahrten, die du noch nicht geschickt hast (Schritt 5), dann
+        deinstalliere DPF Guard und installiere es neu aus dem Play Store.
+        <strong>Achtung:</strong> Dabei werden die gespeicherten Fahrten
+        und die Termine gelöscht.</li>
+    </ol>
+
+    <h3>Wenn wir dir DPF Guard Pro mit einem Code geschenkt haben</h3>
+    <ol class="todo">
+      <li>Öffne den Play Store und tippe oben rechts auf dein Foto.</li>
+      <li>Tippe auf <strong>"Zahlungen und Abos"</strong>, dann auf
+        <strong>"Code einlösen"</strong>.</li>
+      <li>Gib den Code ein und tippe auf <strong>"Einlösen"</strong>.</li>
+      <li>Öffne DPF Guard und tippe oben auf das Symbol der Termine (das
+        Blatt mit Linien).</li>
+      <li>Wenn die Termine leer sind: Tippe auf <strong>"Fahrzeug
+        hinzufügen"</strong>, gib einen Namen ein und tippe auf
+        <strong>"Speichern"</strong>.</li>
+      <li>Tippe auf den Kreis mit dem <strong>"+"</strong> rechts neben dem
+        Namen des Autos. Die Seite "DPF Guard Pro" öffnet sich.</li>
+      <li>Tippe <strong>nicht</strong> auf die rote Schaltfläche
+        "Freischalten — …": Die ist zum Kaufen, und du hast Pro schon.</li>
+      <li>Tippe unten auf der Seite auf den grauen Text
+        <strong>"Kauf wiederherstellen"</strong>.</li>
+      <li>Die Seite schließt sich von selbst und "Fahrzeug hinzufügen"
+        öffnet sich: Pro ist freigeschaltet. Tippe auf "Abbrechen".</li>
+    </ol>
+    <div class="note">Mach das "Kauf wiederherstellen" innerhalb von 3 Tagen
+      nach dem Einlösen: Danach storniert Google das Geschenk.</div>
+
+    <h2>Deine Daten</h2>
+    <p>
+      Die Dateien enthalten keine persönlichen Daten: nur die Werte aus dem
+      Motorsteuergerät. Von der Fahrgestellnummer (VIN) behält die App nur
+      die ersten 11 Zeichen, die Marke, Modell und Baujahr verraten, aber
+      nicht, welches Auto es ist. Details in der
+      <a href="/de/privacy/">Datenschutzerklärung</a>.
+    </p>
+
+    <h2>Fragen?</h2>
+    <p>
+      Schreib an <a href="mailto:support@dpfguard.it">support@dpfguard.it</a>,
+      auch nur, um zu fragen, ob du es richtig machst. Danke!
+    </p>
+  </div>
+</main>
+
+</body>
+</html>
